@@ -2777,8 +2777,8 @@ button:hover {
     left: auto;
     bottom: auto;
     right: 25px;
-    border: 1px solid #96bbc7;
-    box-shadow: 0 2px 4px #96bbc7;
+    border: 1px solid #5a8190;
+    box-shadow: 0 2px 4px #5a8190;
   }
 }
 .c-btn-fixed .c-btn-lists {
@@ -2835,8 +2835,6 @@ button:hover {
 }
 .c-btn-fixed .c-btn-lists li a:hover {
   background: #5a8190;
-}
-.c-btn-fixed .c-btn-lists li a:hover a, .c-btn-fixed .c-btn-lists li a:hover span {
   color: #ffffff !important;
 }
 

@@ -28,8 +28,8 @@ button{
 			left: auto;
 			bottom: auto;
 			right: 25px;
-			border: 1px solid $site-color01;
-			box-shadow: 0 2px 4px $site-color01;
+			border: 1px solid $site-color02;
+			box-shadow: 0 2px 4px $site-color02;
 		}
 		.c-btn-lists{
 			display: flex;
@@ -70,7 +70,7 @@ button{
 					}
 					&:hover{
 						background: $site-color02;
-						a,span{color: $main-color--w !important;}
+						color: $main-color--w !important;
 					}
 				}
 			}
