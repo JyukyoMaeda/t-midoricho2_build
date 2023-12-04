@@ -48,6 +48,36 @@
 
         }
     }
+    // 下記ファーストビュー
+    &.swiper-Fview{
+        @include max(768){
+            // position: absolute;
+            // top: 0;
+        }
+        .swiper-slide{
+            .imgBox img {transition: 3s all;}
+            &-active{//アクティブ時のアクション
+                .zoom img {transform: scale(1.05);}
+                // .bg-img{
+                //     &.-item01{
+                //         width: 100%;
+                //         height: 100%;
+                //         background-image: url(../images/slider/f-view02_tb.png);
+                //         background-size: cover;
+                //         background-repeat: no-repeat;
+                //     }
+                // }
+                .-f-bird_01,
+                .-f-bird_02,
+                .-f-bird_03,
+                .-f-bird_04,
+                .-f-border{
+
+                }
+            }
+        }
+    }
+    // 下記サムネイルタイプ
     &.swiperMain{
         .swiper-slide{
             @include max(768){
