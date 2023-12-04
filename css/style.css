@@ -2665,10 +2665,10 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-imgBg .c-contentsBox.-f-title {
-  top: 29%;
+  top: 27%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 75%;
+  width: 60%;
   filter: drop-shadow(0.5px 0.5px 0px rgba(255, 255, 255, 0.4235294118));
 }
 @media (width >= 768px) {
@@ -2711,6 +2711,11 @@ button.swiper-pagination-bullet {
     left: 75%;
   }
 }
+.c-contents.-imgBg .c-contentsBox.-f-bird_01 {
+  top: 20%;
+  left: 15%;
+  width: 5%;
+}
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-f-bird_01 {
     top: 10%;
@@ -2725,6 +2730,11 @@ button.swiper-pagination-bullet {
     width: 3%;
   }
 }
+.c-contents.-imgBg .c-contentsBox.-f-bird_02 {
+  top: 20%;
+  left: 23%;
+  width: 3%;
+}
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-f-bird_02 {
     top: 7%;
@@ -2737,6 +2747,11 @@ button.swiper-pagination-bullet {
     left: 18%;
     width: 2%;
   }
+}
+.c-contents.-imgBg .c-contentsBox.-f-bird_03 {
+  top: 35%;
+  left: 77%;
+  width: 5%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-f-bird_03 {
@@ -2764,6 +2779,11 @@ button.swiper-pagination-bullet {
     left: 53%;
     width: 1.8%;
   }
+}
+.c-contents.-imgBg .c-contentsBox.-f-border {
+  top: 36%;
+  left: 25%;
+  width: 50%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-f-border {
@@ -3621,16 +3641,30 @@ a {
   perspective-origin: left center;
 }
 .a-fade_f.-item01 {
-  animation-duration: 0.5s;
+  animation-duration: 3.5s;
+}
+@media (width >= 768px) {
+  .a-fade_f.-item01 {
+    animation-duration: 1s;
+  }
 }
 .a-fade_f.-item02 {
-  animation-duration: 1s;
-}
-.a-fade_f.-item03 {
-  animation-duration: 2s;
-}
-.a-fade_f.-item04 {
   animation-duration: 4s;
+}
+@media (width >= 768px) {
+  .a-fade_f.-item02 {
+    animation-duration: 1s;
+  }
+}
+@media (width >= 768px) {
+  .a-fade_f.-item03 {
+    animation-duration: 2s;
+  }
+}
+@media (width >= 768px) {
+  .a-fade_f.-item04 {
+    animation-duration: 4s;
+  }
 }
 .a-fadeUp {
   animation-name: fadeUpAnime;
@@ -3688,6 +3722,11 @@ a {
   perspective-origin: left center;
   animation-duration: 1.5s;
 }
+@media (768px >= width) {
+  .a-fadeLeft_f {
+    animation-duration: 3s;
+  }
+}
 
 /* -----------------------------------------------
     スライドショー関係
@@ -3711,6 +3750,12 @@ a {
   animation: fview-fadeIn 1s 1s both;
   perspective-origin: left center;
   animation-duration: 1s;
+}
+@media (768px >= width) {
+  .a-fview_f {
+    animation: fview-fadeIn 1s;
+    animation-duration: 0.5s;
+  }
 }
 
 @keyframes moveUpAnime {
