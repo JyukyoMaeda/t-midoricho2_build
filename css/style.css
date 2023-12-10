@@ -3021,6 +3021,9 @@ button.swiper-pagination-bullet {
   .c-contents.-f-view .c-contentsBox.-f-title.-concept::after {
     content: "コンセプト";
   }
+  .c-contents.-f-view .c-contentsBox.-f-title.-layout::after {
+    content: "レイアウト";
+  }
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-title {
@@ -3148,6 +3151,12 @@ button.swiper-pagination-bullet {
     top: 20%;
     left: 65%;
   }
+}
+.c-contents.-f-view .c-contentsBox.-f-text {
+  bottom: 0;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  transform: scale(0.9);
 }
 .c-contents.-imgBg {
   position: relative;

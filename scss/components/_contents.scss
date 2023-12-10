@@ -199,6 +199,8 @@
 					}
 					//　タイトル >  コンセプトページ
 					&.-concept{&::after{content: "コンセプト";}}
+					&.-layout{&::after{content: "レイアウト";}}
+
 				}
 				@include min(768){// tb
 					top: 50%;
@@ -306,6 +308,12 @@
 					top: 20%;
 					left: 65%;
 				}
+			}
+			&.-f-text{
+				bottom: 0;
+				left: 80%;
+				transform: translate(-50%, -50%);
+				transform: scale(.9);
 			}
 		}
 	}
