@@ -1,1 +1,19 @@
 // フレックス
+.c-flex{
+    // コンテンツ_タイトル
+    &.-title-Icon{
+        display: flex;
+        flex-wrap: nowrap;
+        li{
+            &:nth-child(1){
+                width: 5%;
+                @include min(768){
+                    width: 4%;
+                }
+            }
+            &:nth-child(2){
+
+            }
+        }
+    }
+}

@@ -12,7 +12,8 @@ $f-b: bold;
 // 基本テキスト
 h1,h2,h3,h4,h5,h6,p,a,span,label{
 	color: $main-color--b;
-	font-family: $f-mincho;
+	// font-family: $f-mincho;
+    font-family: $f-gothic;
 	font-weight: $f-n;
     font-style: normal;
 	text-align: center;
@@ -30,8 +31,22 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
     &.-center{text-align: center;}
 
     // 行間
-	&.lh-1{line-height: 1;}
-	&.lh-1_5{line-height: 1.5;}
+    &.-lh-n    {line-height: normal;}
+	&.-lh-1    {line-height: 1;}
+	&.-lh-1_5  {line-height: 1.5;}
+    &.-lh-1_8  {line-height: 1.8;}
+    &.-lh-2    {line-height: 2;}
+    &.-lh-3    {line-height: 3;}
+
+    &.-lh-n_s  {@include max(768){ line-height: normal;}}
+	&.-lh-1_s  {@include max(768){ line-height: 1;}}
+	&.-lh-1_5_s{@include max(768){ line-height: 1.5;}}
+    &.-lh-1_8_s{@include max(768){ line-height: 1.8;}}
+    &.-lh-2_s  {@include max(768){ line-height: 2;}}
+    &.-lh-3_s  {@include max(768){ line-height: 3;}}
+
+    // 折り返し禁止
+    &.-ws-n{white-space: nowrap}
 
     // 太さ
     &.-b{font-weight: $f-b;}
@@ -59,7 +74,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
 }
 
 // 大きさ
-p,a,span,label{
+h1,h2,h3,h4,h5,h6,p,a,span,label{
         &.s-SS{font-size: 10px;}
         &.s-S{
             font-size: 11px;
@@ -68,7 +83,7 @@ p,a,span,label{
             }
         }
         &.s-M{
-            font-size: 14px;
+            font-size: 12px;
             @include min(768){
                 font-size: clamp(12px, 1.5vw, 16px);
             }
@@ -76,7 +91,7 @@ p,a,span,label{
         &.s-L{
             font-size: 16px;
             @include min(768){
-                font-size: clamp(16px, 1.8vw, 24px);
+                font-size: clamp(16px, 1.8vw, 20px);
             }
             &.-s14{
                 @include max(768){
@@ -85,13 +100,16 @@ p,a,span,label{
             }
         }
         &.s-LL{
-            font-size: 18px;
+            font-size: 21px;
             @include min(768){
-                font-size: clamp(18px, 3vw, 34px);
+                font-size: clamp(18px, 3vw, 32px);
             }
         }
         &.s-3L{
-
+            font-size: 28px;
+            @include min(768){
+                font-size: clamp(18px, 3vw, 32px);
+            }
         }
         &.s-mugen{
             font-size: 24px;

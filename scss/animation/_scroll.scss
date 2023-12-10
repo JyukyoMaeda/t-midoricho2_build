@@ -23,7 +23,6 @@
     }
     49%{
         pointer-events: all;
-        opacity: 0;
     }
     50% {
         opacity: .5;
@@ -36,11 +35,10 @@
 @keyframes scroll-onBtn {
     0% {
         pointer-events: none;
-       opacity: 0;
+        opacity: 0;
     }
     10%{
         pointer-events: all;
-        opacity: .1;
     }
     50% {
         opacity: .5;
@@ -51,11 +49,12 @@
 }
 
 .a-scroll-on{
-    opacity: 0;
-    animation: scroll-onNav;
-    animation-timeline: scroll();
-    animation-range: cover 0% cover 100%;
-
+    @include min(768){
+        opacity: 0;
+        animation: scroll-onNav;
+        animation-timeline: scroll();
+        animation-range: cover 0% cover 100%;
+    }
       // &_btn{
       // 	  position: sticky;
       // 	  width: 10%;

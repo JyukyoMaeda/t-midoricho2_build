@@ -1,8 +1,8 @@
 // ナビゲーション
 .c-hnav{
 	position: sticky;
-	top: 15px;
-    left: 88%;
+	top: 3%;
+    left: 86%;
 	width: 33px;
 	height: 0;
 	z-index: 9999;
@@ -11,7 +11,7 @@
 		left: 94%;
 	}
 	@include min(1200){
-		left: 97.5%;
+		left: 95.5%;
 	}
 	&__cheakbox{
 		display: none;
@@ -41,7 +41,7 @@
 			height: 3px;
 			width: 33px;
 			border-radius: 3px;
-			background: $main-color--b;
+			background: $site-color02;
 			// filter: drop-shadow(0px 0px 1px $main-color--w);
 			cursor: pointer;
 			@include min(768){
@@ -88,8 +88,9 @@
 		width: 55%;
 		max-width: 230px;
 		height: 100%;
-		padding: 5% 4%;
+		padding: 5% 0 0 8%;
 		background: $main-color--w;
+
 		/* 滑らかに表示 */
 		transition: 0.3s ease-in-out;
 		transform: translateX(100%);
@@ -98,31 +99,119 @@
 			width: 90%;
 			max-width: 330px;
 			padding: 2% 3%;
+			background: $main-color--w;
 		}
 		li{
-			padding-bottom: 2vh;
+			margin-bottom: 2vh;
+			transition: 1s all;
+			a{
+				position: relative;
+				display: inline-block;
+				&::before{
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-47%);
+					width: 106%;
+					height: 1px;
+					background: inherit;
+					transition: 1s all;
+				}
+			}
+
+
+			// アクティブ時 アイコンを表示する
+			&.-active{
+				position: relative;
+				transform: scale(1.05);
+				filter: drop-shadow(1px 1px 0px hsla(0, 0%, 0%, 0.322));
+				a{
+					color: $site-color03;
+					font-weight: bold;
+					pointer-events: none;
+					span{color: $site-color03;}
+				}
+				&::after{
+					content: "";
+					position: absolute;
+					top: 40%;
+					left: -10%;
+					transform: translateY(-50%);
+
+					width: 15px;
+					height: 15px;
+					background-image: url(../images/logo/page-title-icon.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					@include min(768){
+						top: 50%;
+						left: -12%;
+						width: 20px;
+						height: 20px;
+					}
+				}
+				&:hover{
+					transform: scale(1);
+					a{
+						color: $site-color03;
+						&::before{
+							background: inherit;
+						}
+						span{color: $site-color03;}
+					}
+				}
+			}
+			&:hover{
+				transform: scale(1.05);
+				a{
+					color: $site-color02;
+					&::before{
+						background: $site-color02;
+					}
+					span{color: $site-color02;}
+				}
+			}
 		}
 	}
 	&__contactArea{
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
-		width: 100%;
-		height: 120px;
+		width: 80%;
+		height: 100px;
+		margin: auto;
 		border: 1px solid $main-color--b;
 		@include min(768){
+			bottom: 14%;
+			width: 65%;
 			height: 120px;
 		}
 		.c-hnav__top{
 			grid-column: 1/3;
 			grid-row: 1/2;
+			transition: .5s all;
+			&:hover{
+				background: $site-color01;
+				span{color: $main-color--w;}
+			}
 		}
 		.c-hnav__bottom{
+			display: block;
 			grid-column: 1/3;
 			grid-row: 2/3;
+			transition: .5s all;
+			&:hover{
+				background: $site-color01-hover;
+				span{color: $main-color--w;}
+			}
 		}
-		position: relative;
 		&::after{
 			content: "";
 			position: absolute;
@@ -133,6 +222,19 @@
 			width: 98%;
 			background: $main-color--b;
 		}
+	}
+	&__logo{
+		position: absolute;
+		bottom: 0%;
+		left: 73%;
+		transform: translateX(-50%);
+		width: 30%;
+	}
+	&__icon{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 11%;
 	}
 }
 
@@ -170,21 +272,25 @@
 		}
 	}
 	&_footer{
+		// アクティブ時
+		&.-active{
+			span{
+				&::after{
+					width: 100%;
+					height: 1.5px;
+					background: $site-color02;
+				}
+			}
+		}
 		&:hover{
 			span{
 				&::after{
 					width: 100%;
-					background: $main-color--b;
+					background: $site-color01;
 				}
 			}
 		}
 		span{
-			// position: absolute;
-			// top: 50%;
-			// left: 50%;
-			// transform: translate(-50%, -50%);
-			// white-space: nowrap;
-			// transition: .5s all;
 			position: relative;
 			&::after{
 				content: "";
