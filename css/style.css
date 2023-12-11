@@ -3487,13 +3487,14 @@ button.swiper-pagination-bullet {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 0px;
   transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
 }
 @media (width >= 768px) {
   .c-contents_subTitle::after {
+    left: 0;
     width: 20px;
     height: 20px;
   }
@@ -3516,8 +3517,13 @@ button.swiper-pagination-bullet {
 }
 .c-contents_subTitle.-iconBox.-iconBtm::after {
   top: auto;
-  bottom: 13%;
+  bottom: 22%;
   transform: inherit;
+}
+@media (width >= 768px) {
+  .c-contents_subTitle.-iconBox.-iconBtm::after {
+    bottom: 13%;
+  }
 }
 .c-contents_subTitle.-borderBtm {
   margin-bottom: 5%;

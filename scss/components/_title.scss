@@ -42,11 +42,12 @@
         content: "";
         position: absolute;
         top: 50%;
-        left: 0;
+        left: 0px;
         transform: translateY(-50%);
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         @include min(768){
+            left: 0;
             width: 20px;
             height: 20px;
         }
@@ -67,8 +68,9 @@
         &.-iconBtm{
             &::after{
                 top: auto;
-                bottom: 13%;
+                bottom: 22%;
                 transform: inherit;
+                @include min(768){bottom: 13%;}
             }
         }
     }
