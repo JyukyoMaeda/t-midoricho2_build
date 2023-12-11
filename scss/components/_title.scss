@@ -1,0 +1,93 @@
+
+// コンテンツ_メインタイトル
+.c-contents_title{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -45%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        font-size: 12px;
+    }
+    &::after{
+        content: "";
+        display: block;
+        position: relative;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1100px;
+        height: 1px;
+        background: $site-color02;
+        @include min(768){
+            bottom: -30px;
+        }
+    }
+    &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN";}}
+    &.-house-layout{&::before{content: "HOUSE LAYOUT";}}
+}
+
+// コンテンツ_サブタイトル
+.c-contents_subTitle{
+    position: relative;
+    &::before{// ボーダー系
+        content: "";
+        display: block;
+        position: absolute;
+    }
+    &::after{// アイコン系
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+        @include min(768){
+            width: 20px;
+            height: 20px;
+        }
+    }
+    span{padding:0 5px 0 5px;}
+    &.-iconBox{
+        padding-left: 5%;
+        @include min(768){
+            padding-left: 8%;
+        }
+        &::after{
+            background-image: url(../images/logo/icon_box.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        // 指定のテキスト内 > フォントサイズが異なる場合に使用すること。
+        //（基本全体に小さいサイズ、要素には大きいサイズをすること。）
+        &.-iconBtm{
+            &::after{
+                top: auto;
+                bottom: 13%;
+                transform: inherit;
+            }
+        }
+    }
+    &.-borderBtm{
+        margin-bottom: 5%;
+        @include min(768){
+            margin-bottom: 5%;
+        }
+        &::before{
+            bottom: -15%;
+            left: 50%;
+            transform: translateX(-50%) scaleY(0.75);
+            width: 100%;
+            color: $site-color01;
+            border-bottom: 3px dotted;
+        }
+        // アイコン文頭にある場合のみ、ボーダーの位置を変更する。
+        // &.-iconBox{
+        //     &::before{transform: translateX(-50%);}
+        // }
+    }
+}

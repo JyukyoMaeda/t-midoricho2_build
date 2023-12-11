@@ -1,1 +1,19 @@
 // 共通
+
+.c-borderBox{
+    padding: 1% 1% 2%;
+    @include min(768){
+        width: 95%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    span{
+        padding: 0 5px;
+    }
+    &.-double{
+        border: 4px double $site-color01;
+        @include min(768){
+            border: 7px double $site-color01;
+        }
+    }
+}

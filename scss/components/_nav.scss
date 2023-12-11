@@ -265,10 +265,10 @@
 		white-space: nowrap;
 		transition: .5s all;
 		@include min(768){
-			top: 72%;
+			top: 62%;
 		}
 		@include min(1400){
-			top: 65%;
+			top: 60%;
 		}
 	}
 	&_footer{

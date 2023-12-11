@@ -74,13 +74,15 @@
 					}
 					@include min(768){
 						display: grid; 
-						grid-template-rows: 1fr 1fr;
+						grid-template-rows: 1.5fr 1fr;
 						grid-template-columns: 1fr 1fr;
 						align-items: center;
 						width: calc(28%);
+						// height: 6vw;
 					}
 					@include min(1600){
-						height: 6.45vw;
+						// height: 7.75vw;
+						// height: 6.45vw;
 					}
 					.top-left{
 						grid-column: 1/2;
@@ -98,7 +100,7 @@
 					&::before{
 						content: "";
 						position: absolute;
-						top: 25%;
+						top: 30%;
 						left: 50%;
 						transform: translate(-50%, -50%);
 						height: 40%;
@@ -108,7 +110,8 @@
 					&::after{
 						content: "";
 						position: absolute;
-						top: 50%;
+						top: 55%;
+						// top: 50%;
 						left: 50%;
 						transform: translate(-50%, -50%);
 						height: 1px;

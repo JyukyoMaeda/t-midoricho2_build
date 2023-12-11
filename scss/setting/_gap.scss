@@ -64,6 +64,12 @@
 .mgl3s {@include max(768){margin-left:3% !important;}}
 .mgl4s {@include max(768){margin-left:4% !important;}}
 .mgl5s {@include max(768){margin-left:5% !important;}}
+.mgl6s {@include max(768){margin-left:6% !important;}}
+.mgl7s {@include max(768){margin-left:7% !important;}}
+.mgl8s {@include max(768){margin-left:8% !important;}}
+.mgl9s {@include max(768){margin-left:9% !important;}}
+.mgl10s {@include max(768){margin-left:10% !important;}}
+
 
 // 768px以上
 .mgl1 {@include min(768){margin-left:1% !important;}}
@@ -71,6 +77,11 @@
 .mgl3 {@include min(768){margin-left:3% !important;}}
 .mgl4 {@include min(768){margin-left:4% !important;}}
 .mgl5 {@include min(768){margin-left:5% !important;}}
+.mgl6 {@include min(768){margin-left:6% !important;}}
+.mgl7 {@include min(768){margin-left:7% !important;}}
+.mgl8 {@include min(768){margin-left:8% !important;}}
+.mgl9 {@include min(768){margin-left:9% !important;}}
+.mgl10 {@include min(768){margin-left:10% !important;}}
 
 
 
@@ -84,6 +95,11 @@
 .mgr3s {@include max(768){margin-right:3% !important;}}
 .mgr4s {@include max(768){margin-right:4% !important;}}
 .mgr5s {@include max(768){margin-right:5% !important;}}
+.mgr6s {@include max(768){margin-right:6% !important;}}
+.mgr7s {@include max(768){margin-right:7% !important;}}
+.mgr8s {@include max(768){margin-right:8% !important;}}
+.mgr9s {@include max(768){margin-right:9% !important;}}
+.mgr10s {@include max(768){margin-right:10% !important;}}
 
 // 768px以上
 .mgr1 {@include min(768){margin-right:1% !important;}}
@@ -91,7 +107,17 @@
 .mgr3 {@include min(768){margin-right:3% !important;}}
 .mgr4 {@include min(768){margin-right:4% !important;}}
 .mgr5 {@include min(768){margin-right:5% !important;}}
+.mgr6 {@include min(768){margin-right:6% !important;}}
+.mgr7 {@include min(768){margin-right:7% !important;}}
+.mgr8 {@include min(768){margin-right:8% !important;}}
+.mgr9 {@include min(768){margin-right:9% !important;}}
+.mgr10 {@include min(768){margin-right:10% !important;}}
 
+/* ------------------------
+　　　margin 上幅
+------------------------ */
+// 768px以上
+.mgt-2 {@include min(768){margin-top:-2px !important;}}
 
 
 
@@ -171,6 +197,11 @@
 .pdl3s  {@include max(768){padding-left: 3% !important;}}
 .pdl4s  {@include max(768){padding-left: 4% !important;}}
 .pdl5s  {@include max(768){padding-left: 5% !important;}}
+.pdl6s  {@include max(768){padding-left: 6%  !important;}}
+.pdl7s  {@include max(768){padding-left: 7% !important;}}
+.pdl8s  {@include max(768){padding-left: 8% !important;}}
+.pdl9s  {@include max(768){padding-left: 9% !important;}}
+.pdl10s  {@include max(768){padding-left: 10% !important;}}
 
 // 768px以上
 .pdl0  {@include min(768){padding-left: 0  !important;}}
@@ -179,6 +210,11 @@
 .pdl3  {@include min(768){padding-left: 3% !important;}}
 .pdl4  {@include min(768){padding-left: 4% !important;}}
 .pdl5  {@include min(768){padding-left: 5% !important;}}
+.pdl6  {@include min(768){padding-left: 6%  !important;}}
+.pdl7  {@include min(768){padding-left: 7% !important;}}
+.pdl8  {@include min(768){padding-left: 8% !important;}}
+.pdl9  {@include min(768){padding-left: 9% !important;}}
+.pdl10  {@include min(768){padding-left: 10% !important;}}
 
 
 

@@ -122,14 +122,14 @@
 					&::before{
 						content: "";
 						position: absolute;
-						top: 50%;
+						top: 59%;
 						left: 0;
 						transform: translateY(-50%);
-						height: 80%;
+						height: 40%;
 						width: 1px;
 						background: $site-color02;
 						@include min(768){
-							height: 40%;
+							height: 25%;
 						}
 					}
 				}
@@ -138,10 +138,10 @@
 						&::before{
 							content: "";
 							position: absolute;
-							top: 50%;
+							top: 59%;
 							left: 0;
 							transform: translateY(-50%);
-							height: 80%;
+							height: 40%;
 							width: 1px;
 							background: $site-color02;
 						}
@@ -150,14 +150,14 @@
 				&::after{
 					content: "";
 					position: absolute;
-					top: 50%;
+					top: 59%;
 					right: 0;
 					transform: translateY(-50%);
-					height: 80%;
+					height: 40%;
 					width: 1px;
 					background: $site-color02;
 					@include min(768){
-						height: 40%;
+						height: 25%;
 					}
 				}
 				a{
@@ -204,7 +204,7 @@
 		width: 60%;
 		margin: auto;
 		@include min(768){
-			width: 50%;
+			width: 40%;
 			max-width: 1000px;
 		}
 		.c-footer__shopFlex{

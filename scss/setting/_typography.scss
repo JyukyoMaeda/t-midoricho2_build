@@ -84,32 +84,20 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
         }
         &.s-M{
             font-size: 12px;
-            @include min(768){
-                font-size: clamp(12px, 1.5vw, 16px);
-            }
+            @include min(768){font-size: clamp(12px, 1.5vw, 16px);}
         }
         &.s-L{
             font-size: 16px;
-            @include min(768){
-                font-size: clamp(16px, 1.8vw, 20px);
-            }
-            &.-s14{
-                @include max(768){
-                    font-size: 14px;
-                }
-            }
+            @include min(768){font-size: clamp(16px, 1.8vw, 20px);}
+            &.-s14{@include max(768){font-size: 14px;}}
         }
         &.s-LL{
             font-size: 21px;
-            @include min(768){
-                font-size: clamp(18px, 3vw, 32px);
-            }
+            @include min(768){font-size: clamp(18px, 3vw, 32px);}
         }
         &.s-3L{
             font-size: 28px;
-            @include min(768){
-                font-size: clamp(18px, 3vw, 32px);
-            }
+            @include min(768){font-size: clamp(21px, 3vw, 48px);}
         }
         &.s-mugen{
             font-size: 24px;
@@ -130,6 +118,12 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
             @include min(768){
                 font-size: clamp(12px, 2.8vw, 14px);
             }
+        }
+        // ナビゲーション関係のサイズ
+        &.-s-nav{
+            &.s-S{@include min(768){font-size: clamp(10px, 1.2vw, 12px) !important;}}
+            &.s-M{@include min(768){font-size: clamp(12px, 1.5vw, 14px) !important;}}
+            &.s-L{@include min(768){font-size: clamp(16px, 1.8vw, 18px) !important;}}
         }
 }
 
