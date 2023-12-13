@@ -28,6 +28,8 @@
     }
     &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN";}}
     &.-house-layout{&::before{content: "HOUSE LAYOUT";}}
+    &.-gaikou{&::before{content: "EXTERIOR";}}
+
 }
 
 // コンテンツ_サブタイトル

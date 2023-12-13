@@ -3474,6 +3474,9 @@ button.swiper-pagination-bullet {
 .c-contents_title.-house-layout::before {
   content: "HOUSE LAYOUT";
 }
+.c-contents_title.-gaikou::before {
+  content: "EXTERIOR";
+}
 
 .c-contents_subTitle {
   position: relative;
