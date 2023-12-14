@@ -185,6 +185,9 @@ h1.-lh-3, h2.-lh-3, h3.-lh-3, h4.-lh-3, h5.-lh-3, h6.-lh-3, p.-lh-3, a.-lh-3, sp
     line-height: 3;
   }
 }
+h1.-shadow, h2.-shadow, h3.-shadow, h4.-shadow, h5.-shadow, h6.-shadow, p.-shadow, a.-shadow, span.-shadow, label.-shadow {
+  filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.637)) !important;
+}
 h1.-ws-n, h2.-ws-n, h3.-ws-n, h4.-ws-n, h5.-ws-n, h6.-ws-n, p.-ws-n, a.-ws-n, span.-ws-n, label.-ws-n {
   white-space: nowrap;
 }
@@ -193,6 +196,9 @@ h1.-b, h2.-b, h3.-b, h4.-b, h5.-b, h6.-b, p.-b, a.-b, span.-b, label.-b {
 }
 h1.-f-gothic, h2.-f-gothic, h3.-f-gothic, h4.-f-gothic, h5.-f-gothic, h6.-f-gothic, p.-f-gothic, a.-f-gothic, span.-f-gothic, label.-f-gothic {
   font-family: source-han-sans-japanese, sans-serif;
+}
+h1.-f-mincho, h2.-f-mincho, h3.-f-mincho, h4.-f-mincho, h5.-f-mincho, h6.-f-mincho, p.-f-mincho, a.-f-mincho, span.-f-mincho, label.-f-mincho {
+  font-family: shippori-mincho, sans-serif;
 }
 h1.-f-gara, h2.-f-gara, h3.-f-gara, h4.-f-gara, h5.-f-gara, h6.-f-gara, p.-f-gara, a.-f-gara, span.-f-gara, label.-f-gara {
   font-family: garamond-premier-pro, serif;
@@ -3207,6 +3213,11 @@ button.swiper-pagination-bullet {
 .c-contents.-f-view {
   position: relative;
 }
+@media (768px >= width) {
+  .c-contents.-f-view .imgBox {
+    opacity: 0.75;
+  }
+}
 .c-contents.-f-view .c-contentsBox {
   position: absolute;
 }
@@ -3215,7 +3226,6 @@ button.swiper-pagination-bullet {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
-  filter: drop-shadow(0.5px 0.5px 0px rgba(255, 255, 255, 0.4235294118));
 }
 @media (768px >= width) {
   .c-contents.-f-view .c-contentsBox.-f-title {
@@ -4116,12 +4126,14 @@ a {
 }
 #popup:checked ~ .popup-overlay,
 #popup-madori01:checked ~ .popup-overlay {
+  display: block;
   background-color: rgba(0, 0, 0, 0.4392156863);
   z-index: 99998;
   opacity: 1;
 }
 #popup:checked ~ .popup-window,
 #popup-madori01:checked ~ .popup-window {
+  display: block;
   z-index: 99999;
   opacity: 1;
 }
@@ -4138,6 +4150,7 @@ a {
   }
 }
 .popup-overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -4149,6 +4162,7 @@ a {
   transition: 0.5s all;
 }
 .popup-window {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
