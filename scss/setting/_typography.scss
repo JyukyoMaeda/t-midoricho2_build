@@ -45,6 +45,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
     &.-lh-2_s  {@include max(768){ line-height: 2;}}
     &.-lh-3_s  {@include max(768){ line-height: 3;}}
 
+    &.-shadow{filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.637)) !important;}
+
+
     // 折り返し禁止
     &.-ws-n{white-space: nowrap}
 
@@ -54,6 +57,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
     // フォントファミリー
     &.-f-gothic{
         font-family: $f-gothic;
+    }
+    &.-f-mincho{
+        font-family: $f-mincho;
     }
     &.-f-gara{
         font-family: $f-01;
