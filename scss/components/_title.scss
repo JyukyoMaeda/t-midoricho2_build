@@ -35,6 +35,8 @@
     &.-entrance{&::before{content: "ENTRANCE";}}
     &.-koutsu{&::before{content: "TRAFFIC";}}
     &.-location{&::before{content: "SURROUNDING ENVIRONMENT";}}
+    &.-spot{&::before{content: "RECOMMENDED SPOTS";}}
+
 }
 
 // コンテンツ_サブタイトル

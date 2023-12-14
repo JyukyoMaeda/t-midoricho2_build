@@ -3593,6 +3593,9 @@ button.swiper-pagination-bullet {
 .c-contents_title.-location::before {
   content: "SURROUNDING ENVIRONMENT";
 }
+.c-contents_title.-spot::before {
+  content: "RECOMMENDED SPOTS";
+}
 
 .c-contents_subTitle {
   position: relative;
@@ -3974,23 +3977,25 @@ button.swiper-pagination-bullet {
 .c-flex.-col2_3 li {
   width: calc(50% - 5px);
 }
-.c-flex.-col2_3 li:nth-child(odd) {
-  margin-right: 5px;
-}
-.c-flex.-col2_3 li:nth-child(even) {
-  margin-left: 5px;
+@media (768px >= width) {
+  .c-flex.-col2_3 li:nth-child(odd) {
+    margin-right: 5px;
+  }
+  .c-flex.-col2_3 li:nth-child(even) {
+    margin-left: 5px;
+  }
 }
 @media (width >= 768px) {
   .c-flex.-col2_3 li {
     width: calc(33% - 20px);
   }
-  .c-flex.-col2_3 li:nth-child(1), .c-flex.-col2_3 li:nth-child(4) {
+  .c-flex.-col2_3 li:nth-child(1), .c-flex.-col2_3 li:nth-child(4), .c-flex.-col2_3 li:nth-child(7) {
     margin-right: 20px;
   }
-  .c-flex.-col2_3 li:nth-child(2), .c-flex.-col2_3 li:nth-child(5) {
+  .c-flex.-col2_3 li:nth-child(2), .c-flex.-col2_3 li:nth-child(5), .c-flex.-col2_3 li:nth-child(8) {
     margin: 0 10px;
   }
-  .c-flex.-col2_3 li:nth-child(3), .c-flex.-col2_3 li:nth-child(6) {
+  .c-flex.-col2_3 li:nth-child(3), .c-flex.-col2_3 li:nth-child(6), .c-flex.-col2_3 li:nth-child(9) {
     margin-left: 20px;
   }
 }
@@ -4088,6 +4093,46 @@ button.swiper-pagination-bullet {
   }
   .c-flex.-shop-information_col2 li:nth-child(3) {
     width: 30%;
+  }
+}
+.c-flex.-shop-information_col3 {
+  flex-wrap: wrap;
+}
+.c-flex.-shop-information_col3 li {
+  margin: 0 !important;
+}
+.c-flex.-shop-information_col3 li:nth-child(1) {
+  width: 100%;
+}
+.c-flex.-shop-information_col3 li:nth-child(2) {
+  width: 25%;
+}
+.c-flex.-shop-information_col3 li:nth-child(3) {
+  width: 75%;
+}
+@media (width >= 768px) {
+  .c-flex.-shop-information_col3 li:nth-child(1) {
+    width: 100%;
+  }
+  .c-flex.-shop-information_col3 li:nth-child(2) {
+    width: 15%;
+  }
+  .c-flex.-shop-information_col3 li:nth-child(3) {
+    width: 85%;
+  }
+  .c-flex.-shop-information_col3 li:nth-child(2), .c-flex.-shop-information_col3 li:nth-child(3) {
+    padding: 1% 0;
+  }
+}
+@media (width >= 1400px) {
+  .c-flex.-shop-information_col3 li:nth-child(1) {
+    width: 100%;
+  }
+  .c-flex.-shop-information_col3 li:nth-child(2) {
+    width: 15%;
+  }
+  .c-flex.-shop-information_col3 li:nth-child(3) {
+    width: 85%;
   }
 }
 

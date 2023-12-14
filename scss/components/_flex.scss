@@ -167,16 +167,21 @@
         flex-wrap: wrap;
         li{
             width: calc(50% - 5px);
-            &:nth-child(odd){margin-right: 5px;}
-            &:nth-child(even){margin-left: 5px;}
+            @include max(768){
+                &:nth-child(odd){margin-right: 5px;}
+                &:nth-child(even){margin-left: 5px;}    
+            }
             @include min(768){
                 width: calc(33% - 20px);
                 &:nth-child(1),
-                &:nth-child(4){margin-right: 20px;}
+                &:nth-child(4),
+                &:nth-child(7){margin-right: 20px;}
                 &:nth-child(2),
-                &:nth-child(5){margin: 0 10px;}
+                &:nth-child(5),
+                &:nth-child(8){margin: 0 10px;}
                 &:nth-child(3),
-                &:nth-child(6){margin-left: 20px;}
+                &:nth-child(6),
+                &:nth-child(9){margin-left: 20px;}
             }    
         }
     }
@@ -225,15 +230,36 @@
                     &:nth-child(3){width: 30%;}
 
                     &:nth-child(2),
-                    &:nth-child(3){
-                        padding: 1% 0;
-                    }
+                    &:nth-child(3){padding: 1% 0;}
                 }
                 @include min(1400){
                     margin: 0 !important;
                     &:nth-child(1){width: 60%;}
                     &:nth-child(2){width: 10%;}
                     &:nth-child(3){width: 30%;}
+                }
+            }
+            
+        }
+        &_col3{
+            flex-wrap: wrap;
+            li{
+                margin: 0 !important;
+                &:nth-child(1){width: 100%;}
+                &:nth-child(2){width: 25%;}
+                &:nth-child(3){width: 75%;}
+                @include min(768){
+                    &:nth-child(1){width: 100%;}
+                    &:nth-child(2){width: 15%;}
+                    &:nth-child(3){width: 85%;}
+
+                    &:nth-child(2),
+                    &:nth-child(3){padding: 1% 0;}
+                }
+                @include min(1400){
+                    &:nth-child(1){width: 100%;}
+                    &:nth-child(2){width: 15%;}
+                    &:nth-child(3){width: 85%;}
                 }
             }
             
