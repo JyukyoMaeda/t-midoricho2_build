@@ -117,4 +117,15 @@
 			}
 		}
 	}
+
+	&.-c-color{
+		@include min(768){
+			transition: 1s all;
+			span{transition: 1s all;}
+			&:hover{
+				span{ color: $site-color01;}
+				
+			}
+		}
+	}
 }

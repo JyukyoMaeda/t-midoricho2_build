@@ -4165,6 +4165,17 @@ a {
   left: 50%;
   background: #636363;
 }
+@media (width >= 768px) {
+  .c-link.-c-color {
+    transition: 1s all;
+  }
+  .c-link.-c-color span {
+    transition: 1s all;
+  }
+  .c-link.-c-color:hover span {
+    color: #96bbc7;
+  }
+}
 
 .swiper .swiper-wrapper .swiper-slide {
   text-align: end;
