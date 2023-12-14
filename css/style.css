@@ -209,6 +209,9 @@ h1.-f-acumin, h2.-f-acumin, h3.-f-acumin, h4.-f-acumin, h5.-f-acumin, h6.-f-acum
   font-weight: bold;
   font-style: italic;
 }
+h1.-white, h2.-white, h3.-white, h4.-white, h5.-white, h6.-white, p.-white, a.-white, span.-white, label.-white {
+  color: #ffffff;
+}
 h1.-color01, h2.-color01, h3.-color01, h4.-color01, h5.-color01, h6.-color01, p.-color01, a.-color01, span.-color01, label.-color01 {
   color: #96bbc7;
 }
@@ -252,7 +255,7 @@ h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-
 }
 @media (width >= 768px) {
   h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-L {
-    font-size: clamp(16px, 1.8vw, 20px);
+    font-size: clamp(16px, 2vw, 24px);
   }
 }
 @media (768px >= width) {
@@ -2270,11 +2273,12 @@ button.swiper-pagination-bullet {
 }
 
 .c-borderBox {
-  padding: 1% 1% 2%;
+  padding: 3%;
 }
 @media (width >= 768px) {
   .c-borderBox {
     width: 95%;
+    padding: 1% 1% 2%;
     margin-right: 0;
     margin-left: auto;
   }
@@ -2288,6 +2292,14 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-borderBox.-double {
     border: 7px double #96bbc7;
+  }
+}
+.c-borderBox.-solid {
+  border: 1px solid #96bbc7;
+}
+@media (width >= 768px) {
+  .c-borderBox.-solid {
+    border: 1px solid #96bbc7;
   }
 }
 
@@ -2334,6 +2346,12 @@ button.swiper-pagination-bullet {
     left: 22%;
     width: 14%;
   }
+}
+
+.colorBox {
+  background: #5a8190;
+  padding: 3% 0;
+  border-radius: 5px;
 }
 
 .c-header {
@@ -3316,6 +3334,9 @@ button.swiper-pagination-bullet {
   .c-contents.-f-view .c-contentsBox.-f-title.-equipment::after {
     content: "設備・仕様";
   }
+  .c-contents.-f-view .c-contentsBox.-f-title.-location::after {
+    content: "周辺環境";
+  }
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-title {
@@ -3447,7 +3468,6 @@ button.swiper-pagination-bullet {
 .c-contents.-f-view .c-contentsBox.-f-text {
   bottom: 0;
   left: 80%;
-  transform: translate(-50%, -50%);
   transform: scale(0.9);
 }
 .c-contents.-imgBg {
@@ -3510,6 +3530,13 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (768px >= width) {
+  .w90s {
+    width: 90% !important;
+    margin: auto;
+  }
+}
+
 .c-contents_title {
   position: relative;
 }
@@ -3559,6 +3586,12 @@ button.swiper-pagination-bullet {
 }
 .c-contents_title.-entrance::before {
   content: "ENTRANCE";
+}
+.c-contents_title.-koutsu::before {
+  content: "TRAFFIC";
+}
+.c-contents_title.-location::before {
+  content: "SURROUNDING ENVIRONMENT";
 }
 
 .c-contents_subTitle {
@@ -3611,6 +3644,62 @@ button.swiper-pagination-bullet {
     bottom: 13%;
   }
 }
+.c-contents_subTitle.-stationBox {
+  padding-left: 15%;
+}
+@media (width >= 768px) {
+  .c-contents_subTitle.-stationBox {
+    padding-left: 15%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents_subTitle.-stationBox {
+    padding-left: 12%;
+  }
+}
+.c-contents_subTitle.-stationBox.-s_1::after {
+  content: "西武池袋線";
+  top: 42%;
+  font-size: 10px;
+  text-align: center;
+  width: 15%;
+}
+@media (width >= 768px) {
+  .c-contents_subTitle.-stationBox.-s_1::after {
+    top: 65%;
+    font-size: 10px;
+    width: 15%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents_subTitle.-stationBox.-s_1::after {
+    top: 56%;
+    font-size: 12px;
+    width: 12%;
+  }
+}
+.c-contents_subTitle.-stationBox.-s_2::after {
+  content: "西武秩父線 JR八高線";
+  top: 0%;
+  font-size: 10px;
+  text-align: center;
+  width: 15%;
+}
+@media (width >= 768px) {
+  .c-contents_subTitle.-stationBox.-s_2::after {
+    top: 38%;
+    font-size: 10px;
+    text-align: center;
+    width: 15%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents_subTitle.-stationBox.-s_2::after {
+    top: 38%;
+    width: 12%;
+    font-size: 12px;
+  }
+}
 .c-contents_subTitle.-borderBtm {
   margin-bottom: 5%;
 }
@@ -3625,7 +3714,12 @@ button.swiper-pagination-bullet {
   transform: translateX(-50%) scaleY(0.75);
   width: 100%;
   color: #96bbc7;
+}
+.c-contents_subTitle.-borderBtm.-dot::before {
   border-bottom: 3px dotted;
+}
+.c-contents_subTitle.-borderBtm.-line::before {
+  border-bottom: 1px solid;
 }
 
 .contactItem {
@@ -3898,6 +3992,102 @@ button.swiper-pagination-bullet {
   }
   .c-flex.-col2_3 li:nth-child(3), .c-flex.-col2_3 li:nth-child(6) {
     margin-left: 20px;
+  }
+}
+.c-flex.-col5 li {
+  width: 20%;
+}
+.c-flex.-shop-information {
+  flex-wrap: wrap;
+}
+@media (width >= 768px) {
+  .c-flex.-shop-information {
+    flex-wrap: nowrap;
+  }
+}
+.c-flex.-shop-information li:nth-child(1) {
+  width: 60%;
+}
+.c-flex.-shop-information li:nth-child(2) {
+  width: 14%;
+}
+.c-flex.-shop-information li:nth-child(3) {
+  width: 25%;
+}
+@media (width >= 768px) {
+  .c-flex.-shop-information li {
+    margin: 0 !important;
+  }
+  .c-flex.-shop-information li:nth-child(1) {
+    width: 48%;
+  }
+  .c-flex.-shop-information li:nth-child(2) {
+    width: 7%;
+  }
+  .c-flex.-shop-information li:nth-child(3) {
+    width: 45%;
+  }
+}
+@media (width >= 1400px) {
+  .c-flex.-shop-information li {
+    margin: 0 !important;
+  }
+  .c-flex.-shop-information li:nth-child(1) {
+    width: 47%;
+  }
+  .c-flex.-shop-information li:nth-child(2) {
+    width: 8%;
+  }
+  .c-flex.-shop-information li:nth-child(3) {
+    width: 45%;
+  }
+}
+.c-flex.-shop-information_col2 {
+  flex-wrap: wrap;
+}
+@media (width >= 768px) {
+  .c-flex.-shop-information_col2 {
+    flex-wrap: nowrap;
+  }
+}
+.c-flex.-shop-information_col2 li:nth-child(1) {
+  width: 60%;
+}
+.c-flex.-shop-information_col2 li:nth-child(2) {
+  width: 14%;
+}
+.c-flex.-shop-information_col2 li:nth-child(3) {
+  width: 25%;
+}
+@media (width >= 768px) {
+  .c-flex.-shop-information_col2 li {
+    margin: 0 !important;
+  }
+  .c-flex.-shop-information_col2 li:nth-child(1) {
+    width: 60%;
+  }
+  .c-flex.-shop-information_col2 li:nth-child(2) {
+    width: 10%;
+  }
+  .c-flex.-shop-information_col2 li:nth-child(3) {
+    width: 30%;
+  }
+  .c-flex.-shop-information_col2 li:nth-child(2), .c-flex.-shop-information_col2 li:nth-child(3) {
+    padding: 1% 0;
+  }
+}
+@media (width >= 1400px) {
+  .c-flex.-shop-information_col2 li {
+    margin: 0 !important;
+  }
+  .c-flex.-shop-information_col2 li:nth-child(1) {
+    width: 60%;
+  }
+  .c-flex.-shop-information_col2 li:nth-child(2) {
+    width: 10%;
+  }
+  .c-flex.-shop-information_col2 li:nth-child(3) {
+    width: 30%;
   }
 }
 
@@ -4398,6 +4588,26 @@ a {
   height: 100vh;
 }
 .p-plan .testBox {
+  width: 100vw;
+  height: 150vh;
+  background: rgba(0, 0, 0, 0.392);
+}
+
+.p-equipment {
+  width: 100vw;
+  height: 100vh;
+}
+.p-equipment .testBox {
+  width: 100vw;
+  height: 150vh;
+  background: rgba(0, 0, 0, 0.392);
+}
+
+.p-location {
+  width: 100vw;
+  height: 100vh;
+}
+.p-location .testBox {
   width: 100vw;
   height: 150vh;
   background: rgba(0, 0, 0, 0.392);

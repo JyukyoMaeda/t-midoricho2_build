@@ -33,6 +33,8 @@
     &.-bathroom{&::before{content: "BATHROOM";}}
     &.-window{&::before{content: "WINDOW";}}
     &.-entrance{&::before{content: "ENTRANCE";}}
+    &.-koutsu{&::before{content: "TRAFFIC";}}
+    &.-location{&::before{content: "SURROUNDING ENVIRONMENT";}}
 }
 
 // コンテンツ_サブタイトル
@@ -79,6 +81,58 @@
             }
         }
     }
+    &.-stationBox{
+        padding-left: 15%;
+        @include min(768){
+            padding-left: 15%;
+        }
+        @include min(1400){
+            padding-left: 12%;
+        }
+        // 一駅の場合
+        &.-s_1 {
+            &::after{
+                content: "西武池袋線";
+                top: 42%;
+                font-size: 10px;
+                text-align: center;
+                width: 15%;
+                @include min(768){
+                    top: 65%;
+                    font-size: 10px;
+                    width: 15%;
+                }
+                @include min(1400){
+                    top: 56%;
+                    font-size: 12px;
+                    width: 12%;
+                }
+            }
+        }
+        // 二駅の場合
+        &.-s_2 {
+            &::after{
+                content: "西武秩父線 JR八高線";
+                top: 0%;
+                font-size: 10px;
+                text-align: center;
+                width: 15%;
+                @include min(768){
+                    top: 38%;
+                    font-size: 10px;
+                    text-align: center;
+                    width: 15%;
+                }
+                @include min(1400){
+                    top: 38%;
+                    width: 12%;
+                    font-size: 12px;
+                }
+            }
+        }
+
+    }
+
     &.-borderBtm{
         margin-bottom: 5%;
         @include min(768){
@@ -90,11 +144,9 @@
             transform: translateX(-50%) scaleY(0.75);
             width: 100%;
             color: $site-color01;
-            border-bottom: 3px dotted;
         }
         // アイコン文頭にある場合のみ、ボーダーの位置を変更する。
-        // &.-iconBox{
-        //     &::before{transform: translateX(-50%);}
-        // }
+        &.-dot{&::before{border-bottom: 3px dotted;}}
+        &.-line{&::before{border-bottom: 1px solid;}}
     }
 }

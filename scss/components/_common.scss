@@ -1,9 +1,10 @@
 // 共通
 
 .c-borderBox{
-    padding: 1% 1% 2%;
+    padding: 3%;
     @include min(768){
         width: 95%;
+        padding: 1% 1% 2%;
         margin-right: 0;
         margin-left: auto;
     }
@@ -14,6 +15,12 @@
         border: 4px double $site-color01;
         @include min(768){
             border: 7px double $site-color01;
+        }
+    }
+    &.-solid{
+        border: 1px solid $site-color01;
+        @include min(768){
+            border: 1px solid $site-color01;
         }
     }
 }
@@ -56,4 +63,10 @@
             }
         }
     }
+}
+
+.colorBox{
+    background: $site-color02;
+    padding: 3% 0;
+    border-radius: 5px;
 }

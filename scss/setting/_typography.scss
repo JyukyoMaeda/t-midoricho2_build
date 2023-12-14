@@ -68,6 +68,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
     }
 
     // 色
+    &.-white{color: $main-color--w}
     &.-color01{color: $site-color01;}
     &.-color02{color: $site-color02;}
     &.-house_c01{color: $house-color01;}
@@ -91,7 +92,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
         }
         &.s-L{
             font-size: 16px;
-            @include min(768){font-size: clamp(16px, 1.8vw, 20px);}
+            @include min(768){font-size: clamp(16px, 2vw, 24px);}
             &.-s14{@include max(768){font-size: 14px;}}
         }
         &.s-LL{

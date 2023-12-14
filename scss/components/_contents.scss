@@ -206,6 +206,8 @@
 					&.-layout{&::after{content: "レイアウト";}}
 					&.-layout{&::after{content: "プラン";}}
 					&.-equipment{&::after{content: "設備・仕様";}}
+					&.-location{&::after{content: "周辺環境";}}
+
 				}
 				@include min(768){// tb
 					top: 50%;
@@ -317,7 +319,6 @@
 			&.-f-text{
 				bottom: 0;
 				left: 80%;
-				transform: translate(-50%, -50%);
 				transform: scale(.9);
 			}
 		}
@@ -379,6 +380,12 @@
 	.w95s{
 		@include max(768){
 			width: 95% !important;
+			margin: auto;
+		}
+	}
+	.w90s{
+		@include max(768){
+			width: 90% !important;
 			margin: auto;
 		}
 	}

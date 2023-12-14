@@ -180,4 +180,63 @@
             }    
         }
     }
+
+
+    // コンテンツ_カラム（sp,pc:5）
+    &.-col5{
+        li{
+            width: calc(100%/5);
+        }
+    }
+
+
+    // ------------- お店の情報 --------------
+    &.-shop-information{
+        flex-wrap: wrap;
+        @include min(768){flex-wrap: nowrap;}
+        li{
+            &:nth-child(1){width: 60%;}
+            &:nth-child(2){width: 14%;}
+            &:nth-child(3){width: 25%;}
+            @include min(768){
+                margin: 0 !important;
+                &:nth-child(1){width: 48%;}
+                &:nth-child(2){width: 7%;}
+                &:nth-child(3){width: 45%;}
+            }
+            @include min(1400){
+                margin: 0 !important;
+                &:nth-child(1){width: 47%;}
+                &:nth-child(2){width: 8%;}
+                &:nth-child(3){width: 45%;}
+            }
+        }
+        &_col2{
+            flex-wrap: wrap;
+            @include min(768){flex-wrap: nowrap;}
+            li{
+                &:nth-child(1){width: 60%;}
+                &:nth-child(2){width: 14%;}
+                &:nth-child(3){width: 25%;}
+                @include min(768){
+                    margin: 0 !important;
+                    &:nth-child(1){width: 60%;}
+                    &:nth-child(2){width: 10%;}
+                    &:nth-child(3){width: 30%;}
+
+                    &:nth-child(2),
+                    &:nth-child(3){
+                        padding: 1% 0;
+                    }
+                }
+                @include min(1400){
+                    margin: 0 !important;
+                    &:nth-child(1){width: 60%;}
+                    &:nth-child(2){width: 10%;}
+                    &:nth-child(3){width: 30%;}
+                }
+            }
+            
+        }
+    }
 }
