@@ -29,7 +29,10 @@
     &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN";}}
     &.-house-layout{&::before{content: "HOUSE LAYOUT";}}
     &.-gaikou{&::before{content: "EXTERIOR";}}
-
+    &.-kitchen{&::before{content: "KITCHEN";}}
+    &.-bathroom{&::before{content: "BATHROOM";}}
+    &.-window{&::before{content: "WINDOW";}}
+    &.-entrance{&::before{content: "ENTRANCE";}}
 }
 
 // コンテンツ_サブタイトル

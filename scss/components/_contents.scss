@@ -204,7 +204,8 @@
 					//　タイトル >  コンセプトページ
 					&.-concept{&::after{content: "コンセプト";}}
 					&.-layout{&::after{content: "レイアウト";}}
-
+					&.-layout{&::after{content: "プラン";}}
+					&.-equipment{&::after{content: "設備・仕様";}}
 				}
 				@include min(768){// tb
 					top: 50%;

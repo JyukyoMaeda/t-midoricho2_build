@@ -547,6 +547,10 @@ p.Information::after, span.Information::after, a.Information::after {
   content: "インフォメーション";
 }
 
+span.-inline {
+  display: inline-block !important;
+}
+
 /* ------------------------------------------------------------------------
 　　　margin 下幅
 		*基本縦方向の幅は、下方側で調整すること。
@@ -567,6 +571,12 @@ p.Information::after, span.Information::after, a.Information::after {
 @media (768px >= width) {
   .mgb-5s {
     margin-bottom: -5% !important;
+  }
+}
+
+@media (768px >= width) {
+  .mgb0s {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -2281,6 +2291,51 @@ button.swiper-pagination-bullet {
   }
 }
 
+.setubi-title {
+  position: relative;
+}
+.setubi-title .m-logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.setubi-title .m-logo.-cleanup {
+  left: 43%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+}
+@media (width >= 768px) {
+  .setubi-title .m-logo.-cleanup {
+    left: 60%;
+    width: 50%;
+  }
+}
+.setubi-title .m-logo.-toto {
+  left: 52%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+}
+@media (width >= 768px) {
+  .setubi-title .m-logo.-toto {
+    top: 40%;
+    left: 65%;
+    width: 50%;
+  }
+}
+.setubi-title .m-logo.-ykkap {
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+@media (width >= 768px) {
+  .setubi-title .m-logo.-ykkap {
+    top: 34%;
+    left: 22%;
+    width: 14%;
+  }
+}
+
 .c-header {
   width: 100vw;
   height: auto;
@@ -3255,6 +3310,12 @@ button.swiper-pagination-bullet {
   .c-contents.-f-view .c-contentsBox.-f-title.-layout::after {
     content: "レイアウト";
   }
+  .c-contents.-f-view .c-contentsBox.-f-title.-layout::after {
+    content: "プラン";
+  }
+  .c-contents.-f-view .c-contentsBox.-f-title.-equipment::after {
+    content: "設備・仕様";
+  }
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-title {
@@ -3487,6 +3548,18 @@ button.swiper-pagination-bullet {
 .c-contents_title.-gaikou::before {
   content: "EXTERIOR";
 }
+.c-contents_title.-kitchen::before {
+  content: "KITCHEN";
+}
+.c-contents_title.-bathroom::before {
+  content: "BATHROOM";
+}
+.c-contents_title.-window::before {
+  content: "WINDOW";
+}
+.c-contents_title.-entrance::before {
+  content: "ENTRANCE";
+}
 
 .c-contents_subTitle {
   position: relative;
@@ -3687,13 +3760,13 @@ button.swiper-pagination-bullet {
   }
 }
 .c-flex.-col2_2 li {
-  width: calc(50% - 10px);
+  width: calc(50% - 5px);
 }
 .c-flex.-col2_2 li:nth-child(1) {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .c-flex.-col2_2 li:nth-child(2) {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 @media (width >= 768px) {
   .c-flex.-col2_2 li {
@@ -3744,6 +3817,87 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-flex.-col2_2.-r li.img {
     width: calc(65% - 20px);
+  }
+}
+@media (768px >= width) {
+  .c-flex.-col2M1_3 {
+    flex-wrap: wrap;
+  }
+}
+@media (768px >= width) {
+  .c-flex.-col2M1_3 li {
+    width: calc(50% - 5px);
+  }
+  .c-flex.-col2M1_3 li:nth-child(2), .c-flex.-col2M1_3 li:nth-child(5) {
+    margin-right: 5px;
+  }
+  .c-flex.-col2M1_3 li:nth-child(1), .c-flex.-col2M1_3 li:nth-child(4) {
+    width: 100%;
+    margin: auto;
+  }
+  .c-flex.-col2M1_3 li:nth-child(3), .c-flex.-col2M1_3 li:nth-child(6) {
+    margin-left: 5px;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col2M1_3 li {
+    width: calc(33.3333% - 20px);
+  }
+  .c-flex.-col2M1_3 li:nth-child(1), .c-flex.-col2M1_3 li:nth-child(4) {
+    margin-right: 20px;
+  }
+  .c-flex.-col2M1_3 li:nth-child(2), .c-flex.-col2M1_3 li:nth-child(5) {
+    margin: 0 10px;
+  }
+  .c-flex.-col2M1_3 li:nth-child(3), .c-flex.-col2M1_3 li:nth-child(6) {
+    margin-left: 20px;
+  }
+}
+.c-flex.-col1_2M1 {
+  flex-wrap: wrap;
+}
+.c-flex.-col1_2M1 li {
+  width: 100%;
+}
+@media (width >= 768px) {
+  .c-flex.-col1_2M1 li {
+    width: calc(50% - 10px);
+  }
+  .c-flex.-col1_2M1 li:nth-child(2), .c-flex.-col1_2M1 li:nth-child(5) {
+    margin-right: 10px;
+  }
+  .c-flex.-col1_2M1 li:nth-child(1), .c-flex.-col1_2M1 li:nth-child(4) {
+    width: 100%;
+    margin: auto;
+  }
+  .c-flex.-col1_2M1 li:nth-child(3), .c-flex.-col1_2M1 li:nth-child(6) {
+    margin-left: 10px;
+  }
+}
+.c-flex.-col2_3 {
+  flex-wrap: wrap;
+}
+.c-flex.-col2_3 li {
+  width: calc(50% - 5px);
+}
+.c-flex.-col2_3 li:nth-child(odd) {
+  margin-right: 5px;
+}
+.c-flex.-col2_3 li:nth-child(even) {
+  margin-left: 5px;
+}
+@media (width >= 768px) {
+  .c-flex.-col2_3 li {
+    width: calc(33% - 20px);
+  }
+  .c-flex.-col2_3 li:nth-child(1), .c-flex.-col2_3 li:nth-child(4) {
+    margin-right: 20px;
+  }
+  .c-flex.-col2_3 li:nth-child(2), .c-flex.-col2_3 li:nth-child(5) {
+    margin: 0 10px;
+  }
+  .c-flex.-col2_3 li:nth-child(3), .c-flex.-col2_3 li:nth-child(6) {
+    margin-left: 20px;
   }
 }
 

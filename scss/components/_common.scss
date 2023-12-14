@@ -17,3 +17,43 @@
         }
     }
 }
+
+
+.setubi-title{
+    position: relative;
+    .m-logo{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &.-cleanup{
+            left: 43%;
+            transform: translate(-50%, -50%);
+            width: 35%;
+            @include min(768){
+                left: 60%;
+                width: 50%;
+            }
+        }
+        &.-toto{
+            left: 52%;
+            transform: translate(-50%, -50%);
+            width: 45%;
+            @include min(768){
+                top: 40%;
+                left: 65%;
+                width: 50%;
+            }
+        }
+        &.-ykkap{
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            width: 30%;
+            @include min(768){
+                top: 34%;
+                left: 22%;
+                width: 14%;
+            }
+        }
+    }
+}
