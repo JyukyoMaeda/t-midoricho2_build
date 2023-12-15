@@ -3239,29 +3239,30 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-f-slider .c-contentsBox.-f-bird_03 {
-    top: 7%;
-    left: 89%;
-    width: 3%;
+    top: 23.5%;
+    left: 91%;
+    width: 2%;
   }
 }
 @media (width >= 1400px) {
   .c-contents.-f-slider .c-contentsBox.-f-bird_03 {
-    left: 79%;
-    width: 2%;
+    top: 13.5%;
+    left: 78%;
+    width: 1.8%;
   }
 }
 @media (width >= 768px) {
   .c-contents.-f-slider .c-contentsBox.-f-bird_04 {
-    top: 59%;
-    left: 62%;
-    width: 2%;
+    top: 57%;
+    left: 65%;
+    width: 1.5%;
   }
 }
 @media (width >= 1400px) {
   .c-contents.-f-slider .c-contentsBox.-f-bird_04 {
-    top: 63%;
-    left: 54%;
-    width: 1.8%;
+    top: 60%;
+    left: 56%;
+    width: 1%;
   }
 }
 .c-contents.-f-slider .c-contentsBox.-f-border {
@@ -3271,16 +3272,16 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-f-slider .c-contentsBox.-f-border {
-    top: 10%;
-    left: 64%;
-    width: 25%;
+    top: 25%;
+    left: 67%;
+    width: 24%;
   }
 }
 @media (width >= 1400px) {
   .c-contents.-f-slider .c-contentsBox.-f-border {
-    top: 10%;
-    left: 56%;
-    width: 23%;
+    top: 17%;
+    left: 60%;
+    width: 18%;
   }
 }
 .c-contents.-f-view {
@@ -4658,14 +4659,119 @@ a {
   background: rgba(0, 0, 0, 0.392);
 }
 
-/* --------------------------------
+/*
+    アニメーション
+    細かな調整は下記サイトを参考に
+    https://cubic-bezier.com/
+*/
+/* 
+    ここには他アニメーションでも使うような
+    共通のクラスを記述すること。
+    ※アニメーションを作成後、必ずここにも追加すること。
+*/
+.a {
+  /* ---------------------------------------
+      colorアニメーション
+  --------------------------------------- */
+}
+.a-bg-color, .a-text-color, .a-rotate-bg, .a-fade, .a-fadeUp, .a-fadeDown, .a-fadeLeft, .a-fadeRight, .a-flipDown, .a-flipLeft, .a-flipRight, .a-moveUp, .a-moveDown, .a-zoomImg .imgBox img, .a-zoomImg:hover .imgBox img, .a-bird_r, .a-bird_l, .a-purupuru {
+  /* ---------------------------------------
+      各アニメーション_オプション関係
+  --------------------------------------- */
+}
+.a-bg-color.-sp05, .a-text-color.-sp05, .a-rotate-bg.-sp05, .a-fade.-sp05, .a-fadeUp.-sp05, .a-fadeDown.-sp05, .a-fadeLeft.-sp05, .a-fadeRight.-sp05, .a-flipDown.-sp05, .a-flipLeft.-sp05, .a-flipRight.-sp05, .a-moveUp.-sp05, .a-moveDown.-sp05, .a-zoomImg .imgBox img.-sp05, .a-zoomImg:hover .imgBox img.-sp05, .a-bird_r.-sp05, .a-bird_l.-sp05, .a-purupuru.-sp05 {
+  animation-duration: 0.5s;
+}
+.a-bg-color.-sp1, .a-text-color.-sp1, .a-rotate-bg.-sp1, .a-fade.-sp1, .a-fadeUp.-sp1, .a-fadeDown.-sp1, .a-fadeLeft.-sp1, .a-fadeRight.-sp1, .a-flipDown.-sp1, .a-flipLeft.-sp1, .a-flipRight.-sp1, .a-moveUp.-sp1, .a-moveDown.-sp1, .a-zoomImg .imgBox img.-sp1, .a-zoomImg:hover .imgBox img.-sp1, .a-bird_r.-sp1, .a-bird_l.-sp1, .a-purupuru.-sp1 {
+  animation-duration: 1s;
+}
+.a-bg-color.-sp15, .a-text-color.-sp15, .a-rotate-bg.-sp15, .a-fade.-sp15, .a-fadeUp.-sp15, .a-fadeDown.-sp15, .a-fadeLeft.-sp15, .a-fadeRight.-sp15, .a-flipDown.-sp15, .a-flipLeft.-sp15, .a-flipRight.-sp15, .a-moveUp.-sp15, .a-moveDown.-sp15, .a-zoomImg .imgBox img.-sp15, .a-zoomImg:hover .imgBox img.-sp15, .a-bird_r.-sp15, .a-bird_l.-sp15, .a-purupuru.-sp15 {
+  animation-duration: 1.5s;
+}
+.a-bg-color.-sp2, .a-text-color.-sp2, .a-rotate-bg.-sp2, .a-fade.-sp2, .a-fadeUp.-sp2, .a-fadeDown.-sp2, .a-fadeLeft.-sp2, .a-fadeRight.-sp2, .a-flipDown.-sp2, .a-flipLeft.-sp2, .a-flipRight.-sp2, .a-moveUp.-sp2, .a-moveDown.-sp2, .a-zoomImg .imgBox img.-sp2, .a-zoomImg:hover .imgBox img.-sp2, .a-bird_r.-sp2, .a-bird_l.-sp2, .a-purupuru.-sp2 {
+  animation-duration: 2s;
+}
+.a-bg-color.-sp25, .a-text-color.-sp25, .a-rotate-bg.-sp25, .a-fade.-sp25, .a-fadeUp.-sp25, .a-fadeDown.-sp25, .a-fadeLeft.-sp25, .a-fadeRight.-sp25, .a-flipDown.-sp25, .a-flipLeft.-sp25, .a-flipRight.-sp25, .a-moveUp.-sp25, .a-moveDown.-sp25, .a-zoomImg .imgBox img.-sp25, .a-zoomImg:hover .imgBox img.-sp25, .a-bird_r.-sp25, .a-bird_l.-sp25, .a-purupuru.-sp25 {
+  animation-duration: 2.5s;
+}
+.a-bg-color.-sp3, .a-text-color.-sp3, .a-rotate-bg.-sp3, .a-fade.-sp3, .a-fadeUp.-sp3, .a-fadeDown.-sp3, .a-fadeLeft.-sp3, .a-fadeRight.-sp3, .a-flipDown.-sp3, .a-flipLeft.-sp3, .a-flipRight.-sp3, .a-moveUp.-sp3, .a-moveDown.-sp3, .a-zoomImg .imgBox img.-sp3, .a-zoomImg:hover .imgBox img.-sp3, .a-bird_r.-sp3, .a-bird_l.-sp3, .a-purupuru.-sp3 {
+  animation-duration: 3s;
+}
+.a-bg-color.-sp35, .a-text-color.-sp35, .a-rotate-bg.-sp35, .a-fade.-sp35, .a-fadeUp.-sp35, .a-fadeDown.-sp35, .a-fadeLeft.-sp35, .a-fadeRight.-sp35, .a-flipDown.-sp35, .a-flipLeft.-sp35, .a-flipRight.-sp35, .a-moveUp.-sp35, .a-moveDown.-sp35, .a-zoomImg .imgBox img.-sp35, .a-zoomImg:hover .imgBox img.-sp35, .a-bird_r.-sp35, .a-bird_l.-sp35, .a-purupuru.-sp35 {
+  animation-duration: 3.5s;
+}
+.a-bg-color.-sp4, .a-text-color.-sp4, .a-rotate-bg.-sp4, .a-fade.-sp4, .a-fadeUp.-sp4, .a-fadeDown.-sp4, .a-fadeLeft.-sp4, .a-fadeRight.-sp4, .a-flipDown.-sp4, .a-flipLeft.-sp4, .a-flipRight.-sp4, .a-moveUp.-sp4, .a-moveDown.-sp4, .a-zoomImg .imgBox img.-sp4, .a-zoomImg:hover .imgBox img.-sp4, .a-bird_r.-sp4, .a-bird_l.-sp4, .a-purupuru.-sp4 {
+  animation-duration: 4s;
+}
+.a-bg-color.-sp45, .a-text-color.-sp45, .a-rotate-bg.-sp45, .a-fade.-sp45, .a-fadeUp.-sp45, .a-fadeDown.-sp45, .a-fadeLeft.-sp45, .a-fadeRight.-sp45, .a-flipDown.-sp45, .a-flipLeft.-sp45, .a-flipRight.-sp45, .a-moveUp.-sp45, .a-moveDown.-sp45, .a-zoomImg .imgBox img.-sp45, .a-zoomImg:hover .imgBox img.-sp45, .a-bird_r.-sp45, .a-bird_l.-sp45, .a-purupuru.-sp45 {
+  animation-duration: 4.5s;
+}
+.a-bg-color.-sp5, .a-text-color.-sp5, .a-rotate-bg.-sp5, .a-fade.-sp5, .a-fadeUp.-sp5, .a-fadeDown.-sp5, .a-fadeLeft.-sp5, .a-fadeRight.-sp5, .a-flipDown.-sp5, .a-flipLeft.-sp5, .a-flipRight.-sp5, .a-moveUp.-sp5, .a-moveDown.-sp5, .a-zoomImg .imgBox img.-sp5, .a-zoomImg:hover .imgBox img.-sp5, .a-bird_r.-sp5, .a-bird_l.-sp5, .a-purupuru.-sp5 {
+  animation-duration: 5s;
+}
+.a-bg-color.-sp55, .a-text-color.-sp55, .a-rotate-bg.-sp55, .a-fade.-sp55, .a-fadeUp.-sp55, .a-fadeDown.-sp55, .a-fadeLeft.-sp55, .a-fadeRight.-sp55, .a-flipDown.-sp55, .a-flipLeft.-sp55, .a-flipRight.-sp55, .a-moveUp.-sp55, .a-moveDown.-sp55, .a-zoomImg .imgBox img.-sp55, .a-zoomImg:hover .imgBox img.-sp55, .a-bird_r.-sp55, .a-bird_l.-sp55, .a-purupuru.-sp55 {
+  animation-duration: 5.5s;
+}
+.a-bg-color.-sp6, .a-text-color.-sp6, .a-rotate-bg.-sp6, .a-fade.-sp6, .a-fadeUp.-sp6, .a-fadeDown.-sp6, .a-fadeLeft.-sp6, .a-fadeRight.-sp6, .a-flipDown.-sp6, .a-flipLeft.-sp6, .a-flipRight.-sp6, .a-moveUp.-sp6, .a-moveDown.-sp6, .a-zoomImg .imgBox img.-sp6, .a-zoomImg:hover .imgBox img.-sp6, .a-bird_r.-sp6, .a-bird_l.-sp6, .a-purupuru.-sp6 {
+  animation-duration: 6s;
+}
+.a-bg-color.-sp65, .a-text-color.-sp65, .a-rotate-bg.-sp65, .a-fade.-sp65, .a-fadeUp.-sp65, .a-fadeDown.-sp65, .a-fadeLeft.-sp65, .a-fadeRight.-sp65, .a-flipDown.-sp65, .a-flipLeft.-sp65, .a-flipRight.-sp65, .a-moveUp.-sp65, .a-moveDown.-sp65, .a-zoomImg .imgBox img.-sp65, .a-zoomImg:hover .imgBox img.-sp65, .a-bird_r.-sp65, .a-bird_l.-sp65, .a-purupuru.-sp65 {
+  animation-duration: 6.5s;
+}
+.a-bg-color.-sp7, .a-text-color.-sp7, .a-rotate-bg.-sp7, .a-fade.-sp7, .a-fadeUp.-sp7, .a-fadeDown.-sp7, .a-fadeLeft.-sp7, .a-fadeRight.-sp7, .a-flipDown.-sp7, .a-flipLeft.-sp7, .a-flipRight.-sp7, .a-moveUp.-sp7, .a-moveDown.-sp7, .a-zoomImg .imgBox img.-sp7, .a-zoomImg:hover .imgBox img.-sp7, .a-bird_r.-sp7, .a-bird_l.-sp7, .a-purupuru.-sp7 {
+  animation-duration: 7s;
+}
+.a-bg-color.-sp75, .a-text-color.-sp75, .a-rotate-bg.-sp75, .a-fade.-sp75, .a-fadeUp.-sp75, .a-fadeDown.-sp75, .a-fadeLeft.-sp75, .a-fadeRight.-sp75, .a-flipDown.-sp75, .a-flipLeft.-sp75, .a-flipRight.-sp75, .a-moveUp.-sp75, .a-moveDown.-sp75, .a-zoomImg .imgBox img.-sp75, .a-zoomImg:hover .imgBox img.-sp75, .a-bird_r.-sp75, .a-bird_l.-sp75, .a-purupuru.-sp75 {
+  animation-duration: 7.5s;
+}
+.a-bg-color.-sp8, .a-text-color.-sp8, .a-rotate-bg.-sp8, .a-fade.-sp8, .a-fadeUp.-sp8, .a-fadeDown.-sp8, .a-fadeLeft.-sp8, .a-fadeRight.-sp8, .a-flipDown.-sp8, .a-flipLeft.-sp8, .a-flipRight.-sp8, .a-moveUp.-sp8, .a-moveDown.-sp8, .a-zoomImg .imgBox img.-sp8, .a-zoomImg:hover .imgBox img.-sp8, .a-bird_r.-sp8, .a-bird_l.-sp8, .a-purupuru.-sp8 {
+  animation-duration: 8s;
+}
+.a-bg-color.-sp85, .a-text-color.-sp85, .a-rotate-bg.-sp85, .a-fade.-sp85, .a-fadeUp.-sp85, .a-fadeDown.-sp85, .a-fadeLeft.-sp85, .a-fadeRight.-sp85, .a-flipDown.-sp85, .a-flipLeft.-sp85, .a-flipRight.-sp85, .a-moveUp.-sp85, .a-moveDown.-sp85, .a-zoomImg .imgBox img.-sp85, .a-zoomImg:hover .imgBox img.-sp85, .a-bird_r.-sp85, .a-bird_l.-sp85, .a-purupuru.-sp85 {
+  animation-duration: 8.5s;
+}
+.a-bg-color.-sp9, .a-text-color.-sp9, .a-rotate-bg.-sp9, .a-fade.-sp9, .a-fadeUp.-sp9, .a-fadeDown.-sp9, .a-fadeLeft.-sp9, .a-fadeRight.-sp9, .a-flipDown.-sp9, .a-flipLeft.-sp9, .a-flipRight.-sp9, .a-moveUp.-sp9, .a-moveDown.-sp9, .a-zoomImg .imgBox img.-sp9, .a-zoomImg:hover .imgBox img.-sp9, .a-bird_r.-sp9, .a-bird_l.-sp9, .a-purupuru.-sp9 {
+  animation-duration: 9s;
+}
+.a-bg-color.-sp95, .a-text-color.-sp95, .a-rotate-bg.-sp95, .a-fade.-sp95, .a-fadeUp.-sp95, .a-fadeDown.-sp95, .a-fadeLeft.-sp95, .a-fadeRight.-sp95, .a-flipDown.-sp95, .a-flipLeft.-sp95, .a-flipRight.-sp95, .a-moveUp.-sp95, .a-moveDown.-sp95, .a-zoomImg .imgBox img.-sp95, .a-zoomImg:hover .imgBox img.-sp95, .a-bird_r.-sp95, .a-bird_l.-sp95, .a-purupuru.-sp95 {
+  animation-duration: 9.5s;
+}
+.a-bg-color.-sp10, .a-text-color.-sp10, .a-rotate-bg.-sp10, .a-fade.-sp10, .a-fadeUp.-sp10, .a-fadeDown.-sp10, .a-fadeLeft.-sp10, .a-fadeRight.-sp10, .a-flipDown.-sp10, .a-flipLeft.-sp10, .a-flipRight.-sp10, .a-moveUp.-sp10, .a-moveDown.-sp10, .a-zoomImg .imgBox img.-sp10, .a-zoomImg:hover .imgBox img.-sp10, .a-bird_r.-sp10, .a-bird_l.-sp10, .a-purupuru.-sp10 {
+  animation-duration: 10s;
+}
+.a-bg-color.-sc20, .a-text-color.-sc20, .a-rotate-bg.-sc20, .a-fade.-sc20, .a-fadeUp.-sc20, .a-fadeDown.-sc20, .a-fadeLeft.-sc20, .a-fadeRight.-sc20, .a-flipDown.-sc20, .a-flipLeft.-sc20, .a-flipRight.-sc20, .a-moveUp.-sc20, .a-moveDown.-sc20, .a-zoomImg .imgBox img.-sc20, .a-zoomImg:hover .imgBox img.-sc20, .a-bird_r.-sc20, .a-bird_l.-sc20, .a-purupuru.-sc20 {
+  animation-timeline: view();
+  animation-range: entry -20% contain 20%;
+}
+.a-bg-color.-sc30, .a-text-color.-sc30, .a-rotate-bg.-sc30, .a-fade.-sc30, .a-fadeUp.-sc30, .a-fadeDown.-sc30, .a-fadeLeft.-sc30, .a-fadeRight.-sc30, .a-flipDown.-sc30, .a-flipLeft.-sc30, .a-flipRight.-sc30, .a-moveUp.-sc30, .a-moveDown.-sc30, .a-zoomImg .imgBox img.-sc30, .a-zoomImg:hover .imgBox img.-sc30, .a-bird_r.-sc30, .a-bird_l.-sc30, .a-purupuru.-sc30 {
+  animation-timeline: view();
+  animation-range: entry -10% contain 30%;
+}
+.a-bg-color.-sc40, .a-text-color.-sc40, .a-rotate-bg.-sc40, .a-fade.-sc40, .a-fadeUp.-sc40, .a-fadeDown.-sc40, .a-fadeLeft.-sc40, .a-fadeRight.-sc40, .a-flipDown.-sc40, .a-flipLeft.-sc40, .a-flipRight.-sc40, .a-moveUp.-sc40, .a-moveDown.-sc40, .a-zoomImg .imgBox img.-sc40, .a-zoomImg:hover .imgBox img.-sc40, .a-bird_r.-sc40, .a-bird_l.-sc40, .a-purupuru.-sc40 {
+  animation-timeline: view();
+  animation-range: entry 0% contain 40%;
+}
 
-    フリップアニメーション各種
-    ・flipDownAnime： 下回転
-    ・flipLeftAnime： 左回転
-    ・flipRightAnime：右回転
-
--------------------------------- */
+.a {
+  /* ----------------------------
+  ・flipDownAnime： 下回転
+  ----------------------------- */
+  /* --------------------------------
+  ・flipLeftAnime： 左回転
+  -------------------------------- */
+  /* --------------------------------
+  ・flipRightAnime：右回転
+  -------------------------------- */
+}
+.a-flipDown {
+  animation-name: flipDownAnime;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.a-flipDown img {
+  filter: drop-shadow(2px 2px 2px gray);
+  transition: 1s all;
+}
 @keyframes flipDownAnime {
   from {
     transform: perspective(2500px) rotateX(100deg);
@@ -4675,6 +4781,15 @@ a {
     transform: perspective(2500px) rotateX(0);
     opacity: 1;
   }
+}
+.a-flipLeft {
+  animation-name: flipLeftAnime;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.a-flipLeft img {
+  filter: drop-shadow(2px 2px 2px gray);
+  transition: 1s all;
 }
 @keyframes flipLeftAnime {
   from {
@@ -4686,6 +4801,15 @@ a {
     opacity: 1;
   }
 }
+.a-flipRight {
+  animation-name: flipRightAnime;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.a-flipRight img {
+  filter: drop-shadow(2px 2px 2px gray);
+  transition: 1s all;
+}
 @keyframes flipRightAnime {
   from {
     transform: perspective(600px) translate3d(0, 0, 0) rotateY(-30deg);
@@ -4695,40 +4819,6 @@ a {
     transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
     opacity: 1;
   }
-}
-.a-flipDown {
-  animation-name: flipDownAnime;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.a-flipLeft {
-  animation-name: flipLeftAnime;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.a-flipRight {
-  animation-name: flipRightAnime;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.a.-item01 {
-  animation-duration: 0.5s;
-}
-.a.-item02 {
-  animation-duration: 0.75s;
-}
-.a.-item03 {
-  animation-duration: 1.25s;
-}
-.a.-item04 {
-  animation-duration: 1.75s;
-}
-.a.-item05 {
-  animation-duration: 2.25s;
-}
-.a img {
-  filter: drop-shadow(2px 2px 2px gray);
-  transition: 1s all;
 }
 
 @keyframes slideUp {
@@ -4747,6 +4837,13 @@ a {
     transform: translateY(10%);
   }
 }
+/* ----------------------------
+    背景要素に色を順番に付与する。
+---------------------------- */
+.a-bg-color {
+  animation: bg-color-bg 5s infinite;
+}
+
 @keyframes bg-color-bg {
   0% {
     background-color: #a356af;
@@ -4773,6 +4870,10 @@ a {
     background-color: #a356af;
   }
 }
+.a-text-color {
+  animation: bg-color-text 5s infinite;
+}
+
 @keyframes bg-color-text {
   0% {
     color: #a356af;
@@ -4799,12 +4900,11 @@ a {
     color: #a356af;
   }
 }
-.a-bg-color {
-  animation: bg-color-bg 5s infinite;
-}
-
-.a-text-color {
-  animation: bg-color-text 5s infinite;
+/* ---------------------------------------------------
+    背景画像（.c-content.-imgBg .imgBox）をスライドさせる
+--------------------------------------------------- */
+.a-rotate-bg {
+  animation: rotate-bg 10s infinite;
 }
 
 @keyframes rotate-bg {
@@ -4818,10 +4918,6 @@ a {
     transform: rotate(360deg);
   }
 }
-.a-rotate-bg {
-  animation: rotate-bg 10s infinite;
-}
-
 @keyframes scroll-onLogo {
   0% {
     pointer-events: none;
@@ -4897,26 +4993,52 @@ a {
     opacity: 1;
   }
 }
-.a-moveImg .imgBox {
+.a-zoomImg .imgBox {
   background: black;
   overflow: hidden;
   transition: 3s all;
 }
-.a-moveImg .imgBox img {
+.a-zoomImg .imgBox img {
   animation-name: ZoomOut;
   animation-fill-mode: forwards;
   animation-duration: 1s;
   transform: scale(1.01);
 }
-.a-moveImg:hover {
+.a-zoomImg:hover {
   transition: 1s all;
 }
-.a-moveImg:hover .imgBox img {
+.a-zoomImg:hover .imgBox img {
   animation-name: ZoomIn;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
 }
 
+/* -----------------------------------------
+    animation-range: entry -20% contain 40%;
+    画面の-20%下方から変化を開始、
+    画面の40%に到達したときに変化が終了する。
+----------------------------------------- */
+.a {
+  /* ---------------------------------------
+      通常のfadeアニメーション
+  --------------------------------------- */
+  /* ---------------------------------------
+      fadeUPアニメーション
+  --------------------------------------- */
+  /* ---------------------------------------
+      fadeDownアニメーション
+  --------------------------------------- */
+  /* ---------------------------------------
+      fadeRightアニメーション
+  --------------------------------------- */
+  /* ---------------------------------------
+      fadeLeftアニメーション
+  --------------------------------------- */
+}
+.a-fade {
+  animation-name: fadeAnime;
+  perspective-origin: left center;
+}
 @keyframes fadeAnime {
   from {
     opacity: 0;
@@ -4924,6 +5046,10 @@ a {
   to {
     opacity: 1;
   }
+}
+.a-fadeUp {
+  animation-name: fadeUpAnime;
+  perspective-origin: left center;
 }
 @keyframes fadeUpAnime {
   from {
@@ -4935,6 +5061,9 @@ a {
     transform: translateY(0);
   }
 }
+.a-fadeDown {
+  animation-name: fadeDownAnime;
+}
 @keyframes fadeDownAnime {
   from {
     opacity: 0;
@@ -4945,15 +5074,8 @@ a {
     transform: translateY(0);
   }
 }
-@keyframes fadeLeftAnime {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.a-fadeRight {
+  animation-name: fadeRightAnime;
 }
 @keyframes fadeRightAnime {
   from {
@@ -4965,113 +5087,23 @@ a {
     transform: translateX(0);
   }
 }
-.a-fade_f {
-  animation-name: fadeAnime;
-  perspective-origin: left center;
-}
-.a-fade_f.-item01 {
-  animation-duration: 3.5s;
-}
-@media (width >= 768px) {
-  .a-fade_f.-item01 {
-    animation-duration: 1s;
-  }
-}
-.a-fade_f.-item02 {
-  animation-duration: 4s;
-}
-@media (width >= 768px) {
-  .a-fade_f.-item02 {
-    animation-duration: 1s;
-  }
-}
-@media (width >= 768px) {
-  .a-fade_f.-item03 {
-    animation-duration: 2s;
-  }
-}
-@media (width >= 768px) {
-  .a-fade_f.-item04 {
-    animation-duration: 4s;
-  }
-}
-.a-fadeUp {
-  animation-name: fadeUpAnime;
-  animation-duration: 0.5s;
-  animation-timeline: view();
-  animation-range: entry -20% contain 40%;
-}
-.a-fadeUp.-item01 {
-  animation-range: entry -60% contain 0%;
-}
-.a-fadeUp.-item02 {
-  animation-range: entry -40% contain 20%;
-}
-.a-fadeUp.-item03 {
-  animation-range: entry -20% contain 40%;
-}
-.a-fadeUp.-item04 {
-  animation-range: entry 0% contain 60%;
-}
-.a-fadeUp_f {
-  animation-name: fadeUpAnime;
-  perspective-origin: left center;
-  animation-duration: 2s;
-}
-.a-fadeDown {
-  animation-name: fadeDownAnime;
-  animation-duration: 0.5s;
-  animation-timeline: view();
-  animation-range: entry -20% contain 40%;
-}
-.a-fadeDown_f {
-  animation-name: fadeDownAnime;
-  perspective-origin: left center;
-  animation-duration: 1.5s;
-}
-.a-fadeRight {
-  animation-name: fadeRightAnime;
-  animation-duration: 0.5s;
-  animation-timeline: view();
-  animation-range: entry -20% contain 40%;
-}
-.a-fadeRight_f {
-  animation-name: fadeRightAnime;
-  perspective-origin: left center;
-  animation-duration: 1s;
-}
 .a-fadeLeft {
   animation-name: fadeLeftAnime;
-  animation-duration: 0.5s;
-  animation-timeline: view();
-  animation-range: entry -20% contain 40%;
 }
-.a-fadeLeft_f {
-  animation-name: fadeLeftAnime;
-  perspective-origin: left center;
-  animation-duration: 1.5s;
-}
-@media (768px >= width) {
-  .a-fadeLeft_f {
-    animation-duration: 3s;
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 /* -----------------------------------------------
     スライドショー関係
 ------------------------------------------------*/
-@keyframes fview-fadeIn {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-    filter: blur(10px);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-    filter: blur(0);
-  }
-}
 .a-fview {
   animation: fview-fadeIn 1s 1s both;
 }
@@ -5087,6 +5119,22 @@ a {
   }
 }
 
+@keyframes fview-fadeIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.a-moveUp {
+  animation-name: moveUpAnime;
+  animation-fill-mode: infinite;
+}
 @keyframes moveUpAnime {
   0% {
     transform: translateY(0px) scale(1);
@@ -5100,6 +5148,10 @@ a {
     transform: translateY(0px) scale(1);
     opacity: 1;
   }
+}
+.a-moveDown {
+  animation-name: moveDownAnime;
+  animation-fill-mode: infinite;
 }
 @keyframes moveDownAnime {
   0% {
@@ -5115,11 +5167,75 @@ a {
     opacity: 1;
   }
 }
-.a-moveUp {
-  animation: moveUpAnime infinite;
-  animation-duration: 5s;
+
+/*　-------------------------------------------
+    ここにはオリジナルアニメーションを記述すること。
+-------------------------------------------- */
+.a {
+  /* ---------------------------------------
+      鳥の着地または飛び立つ動き
+  --------------------------------------- */
+  /* ---------------------------------------
+      プルプル動く
+  --------------------------------------- */
 }
-.a-moveDown {
-  animation: moveDownAnime infinite;
-  animation-duration: 5s;
+.a-bird_l {
+  animation-name: birdLeftAnime;
+  animation-fill-mode: cubic-bezier(0, 1.13, 0.84, 0.39);
+}
+@keyframes birdLeftAnime {
+  0% {
+    opacity: 0;
+    transform: translate(-200px, -10px) scale(0);
+  }
+  10% {
+    transform: translate(-200px, -10px) scale(0.3);
+  }
+  40% {
+    opacity: 0.5;
+    transform: translate(-50px, 20px) scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+.a-bird_r {
+  animation-name: birdRightAnime;
+  animation-fill-mode: cubic-bezier(0, 1.13, 0.84, 0.39);
+}
+@keyframes birdRightAnime {
+  0% {
+    opacity: 0;
+    transform: translate(200px, -10px) scale(0);
+  }
+  10% {
+    transform: translate(200px, -10px) scale(0.3);
+  }
+  40% {
+    opacity: 0.5;
+    transform: translate(50px, 20px) scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+.a-purupuru {
+  animation-name: purupuru;
+  animation-fill-mode: infinite;
+}
+@keyframes purupuru {
+  0% {
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+  20% {
+    transform: scale(1, 1.06) translate(-5%, -4%) skew(1deg, 0deg);
+  }
+  80% {
+    transform: scale(1, 0.97) translate(-2%, 2%) skew(-1deg, 0deg);
+  }
+  100% {
+    transform: scale(1, 1) translate(0%, 0%);
+  }
 }/*# sourceMappingURL=style.css.map */

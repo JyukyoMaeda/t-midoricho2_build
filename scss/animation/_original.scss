@@ -1,0 +1,70 @@
+
+/*　-------------------------------------------
+    ここにはオリジナルアニメーションを記述すること。
+-------------------------------------------- */
+.a{
+        /* ---------------------------------------
+            鳥の着地または飛び立つ動き
+        --------------------------------------- */
+        &-bird{
+            &_l{
+                animation-name: birdLeftAnime;
+                animation-fill-mode: cubic-bezier(0,1.13,.84,.39);    
+            }
+            @keyframes birdLeftAnime{
+                0% {
+                    opacity: 0;
+                    transform: translate(-200px,-10px) scale(0);
+                }
+                10% {
+                    transform: translate(-200px,-10px) scale(0.3);
+                }
+                40%{
+                    opacity: 0.5;
+                    transform: translate(-50px,20px) scale(.75);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translate(0px, 0px) scale(1);
+                }
+            }
+            &_r{
+                animation-name: birdRightAnime;
+                animation-fill-mode: cubic-bezier(0,1.13,.84,.39);
+            }
+            @keyframes birdRightAnime{
+                0% {
+                    opacity: 0;
+                    transform: translate(200px,-10px) scale(0);
+                }
+                10% {
+                    transform: translate(200px,-10px) scale(0.3);
+                }
+                40%{
+                    opacity: 0.5;
+                    transform: translate(50px,20px) scale(.75);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translate(0px, 0px) scale(1);
+                }
+            }
+        }
+
+
+        /* ---------------------------------------
+            プルプル動く
+        --------------------------------------- */
+        &-purupuru {
+            animation-name: purupuru;
+            animation-fill-mode: infinite;
+        }
+        @keyframes purupuru {
+            0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
+            20%  { transform: scale(1.0, 1.06) translate(-5%, -4%) skew(1deg, 0deg); }
+            // 50%  { transform: scale(1.0, 0.94) translate(5%, 4%) skew(-1deg, 0deg); }
+            // 65%  { transform: scale(1.0, 1.03) translate(2%, -2%) skew(1deg, 0deg); }
+            80%  { transform: scale(1.0, 0.97) translate(-2%, 2%) skew(-1deg, 0deg); }
+            100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+        }
+}

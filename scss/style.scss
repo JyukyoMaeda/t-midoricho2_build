@@ -37,7 +37,13 @@
 @import "./page/quality";       // 基本使わない。
 @import "./page/overview";      // 基本使わない。
 
-// アニメーション
+
+/*
+    アニメーション
+    細かな調整は下記サイトを参考に
+    https://cubic-bezier.com/
+*/
+@import "./animation/common";
 @import "./animation/flip";
 @import "./animation/slide";
 @import "./animation/color";
@@ -45,3 +51,4 @@
 @import "./animation/zoom";
 @import "./animation/fade";
 @import "./animation/move";
+@import "./animation/original";

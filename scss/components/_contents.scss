@@ -124,25 +124,26 @@
 					left: 77%;
 					width: 5%;
 					@include min(768){// tb
-						top: 7%;
-						left: 89%;
-						width: 3%;
+						top: 23.5%;
+						left: 91%;
+						width: 2%;
 					}
 					@include min(1400){// pc
-						left: 79%;
-						width: 2%;
+						top: 13.5%;
+						left: 78%;
+						width: 1.8%;
 					}
 				}
 				&_04{// 緑
 					@include min(768){// tb
-						top: 59%;
-						left: 62%;
-						width: 2%;
+						top: 57%;
+						left: 65%;
+						width: 1.5%;
 					}
 					@include min(1400){// pc
-						top: 63%;
-						left: 54%;
-						width: 1.8%;
+						top: 60%;
+						left: 56%;
+						width: 1%;
 					}
 				}
 			}
@@ -151,14 +152,14 @@
 				left: 25%;
 				width: 50%;
 				@include min(768){// tb
-					top: 10%;
-					left: 64%;
-					width: 25%;
+					top: 25%;
+					left: 67%;
+					width: 24%;
 				}
 				@include min(1400){// pc
-					top: 10%;
-					left: 56%;
-					width: 23%;
+					top: 17%;
+					left: 60%;
+					width: 18%;
 				}
 			}
 		}
