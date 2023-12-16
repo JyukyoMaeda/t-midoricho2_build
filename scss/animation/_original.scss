@@ -7,11 +7,15 @@
             鳥の着地または飛び立つ動き
         --------------------------------------- */
         &-bird{
-            &_l{
-                animation-name: birdLeftAnime;
-                animation-fill-mode: cubic-bezier(0,1.13,.84,.39);    
+            &_l01{
+                animation-name: birdLeftAnime01;
+                animation-fill-mode: cubic-bezier(0,1.13,.84,.39);
             }
-            @keyframes birdLeftAnime{
+            &_l02{
+                animation-name: birdLeftAnime02;
+                animation-fill-mode: cubic-bezier(0,1.13,.84,.39);
+            }
+            @keyframes birdLeftAnime01{
                 0% {
                     opacity: 0;
                     transform: translate(-200px,-10px) scale(0);
@@ -22,6 +26,23 @@
                 40%{
                     opacity: 0.5;
                     transform: translate(-50px,20px) scale(.75);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translate(0px, 0px) scale(1);
+                }
+            }
+            @keyframes birdLeftAnime02{
+                0% {
+                    opacity: 0;
+                    transform: translate(-100px,10px) scale(0);
+                }
+                10% {
+                    transform: translate(-100px,10px) scale(0.3);
+                }
+                40%{
+                    opacity: 0.5;
+                    transform: translate(-50px,0px) scale(.75);
                 }
                 100% {
                     opacity: 1;
@@ -50,7 +71,6 @@
                 }
             }
         }
-
 
         /* ---------------------------------------
             プルプル動く
