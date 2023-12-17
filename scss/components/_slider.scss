@@ -136,4 +136,18 @@
             }
         }
     }
+    // ドット
+    .swiper-pagination{
+        &.-type01{
+            .swiper-pagination-bullet{
+                box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.692);
+                transition: all 1s;
+            }
+            .swiper-pagination-bullet-active {
+                width: 20px;
+                border-radius: 5px;
+                background: $site-color02;
+            }
+        }
+    }
 }
