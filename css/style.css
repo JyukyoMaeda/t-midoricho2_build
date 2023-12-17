@@ -2998,6 +2998,14 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-hnav__content li.-active::after {
     top: 50%;
+    left: -5%;
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (width >= 1400px) {
+  .c-hnav__content li.-active::after {
+    top: 50%;
     left: -12%;
     width: 20px;
     height: 20px;
@@ -3129,7 +3137,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 1400px) {
   .navItem_sub02 {
-    top: 60%;
+    top: 70%;
   }
 }
 .navItem_footer.-active span::after {
@@ -3245,7 +3253,12 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-f-slider .c-contentsBox.-f-des.-w {
-    left: 75%;
+    left: 53%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents.-f-slider .c-contentsBox.-f-des.-w {
+    left: 72%;
   }
 }
 .c-contents.-f-slider .c-contentsBox.-f-bird_01 {
@@ -5026,11 +5039,12 @@ a {
     pointer-events: none;
     opacity: 0;
   }
-  49% {
+  29% {
     pointer-events: all;
+    opacity: 0.9;
   }
-  50% {
-    opacity: 0.5;
+  30% {
+    opacity: 1;
   }
   100% {
     opacity: 1;

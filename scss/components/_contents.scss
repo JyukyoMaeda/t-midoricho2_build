@@ -85,7 +85,10 @@
 				}
 				&.-w{
 					@include min(768){
-						left: 75%;
+						left: 53%;
+					}
+					@include min(1400){
+						left: 72%;
 					}
 				}
 			}

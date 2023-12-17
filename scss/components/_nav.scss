@@ -146,6 +146,12 @@
 					background-repeat: no-repeat;
 					@include min(768){
 						top: 50%;
+						left: -5%;
+						width: 10px;
+						height: 10px;
+					}
+					@include min(1400){
+						top: 50%;
 						left: -12%;
 						width: 20px;
 						height: 20px;
@@ -268,7 +274,7 @@
 			top: 62%;
 		}
 		@include min(1400){
-			top: 60%;
+			top: 70%;
 		}
 	}
 	&_footer{
