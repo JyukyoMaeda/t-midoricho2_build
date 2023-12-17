@@ -40,6 +40,15 @@
     }
 }
 
+.bannerArea{
+    width: 60%;
+    max-width: 400px;
+    margin: auto;
+    @include min(768){
+        width: 37%;
+    }
+}
+
 .c-borderBox{
     padding: 3%;
     @include min(768){

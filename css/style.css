@@ -2327,6 +2327,17 @@ button.swiper-pagination-bullet {
   }
 }
 
+.bannerArea {
+  width: 60%;
+  max-width: 400px;
+  margin: auto;
+}
+@media (width >= 768px) {
+  .bannerArea {
+    width: 37%;
+  }
+}
+
 .c-borderBox {
   padding: 3%;
 }
@@ -2550,7 +2561,6 @@ button.swiper-pagination-bullet {
     position: relative;
     width: 12.5%;
     height: auto;
-    padding: 2.1% 0;
     background: #ffffff;
     transition: 0.5s all;
   }
@@ -2584,6 +2594,7 @@ button.swiper-pagination-bullet {
     display: block;
     width: 100%;
     height: 100%;
+    padding: 15% 0;
   }
   .c-header__navArea .c-header__navLists li.-active {
     background: #5a8190;
@@ -4397,7 +4408,7 @@ a {
 }
 .c-link.-text .logoBox::after {
   content: "";
-  background-image: url(../images/SVG/logo_text.svg);
+  background-image: url(../images/logo/SVG/logo_text.svg);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4457,7 +4468,7 @@ a {
 .c-link.-text:hover .logoBox::after {
   top: 55%;
   left: 55%;
-  opacity: 0.2;
+  opacity: 0.1;
   filter: drop-shadow(2px 2px 3px black);
 }
 .c-link.-text:hover .textBox p {
@@ -5423,4 +5434,92 @@ a {
   100% {
     transform: scale(1, 1) translate(0%, 0%);
   }
+}
+
+/* ---------------------------------------
+    飯能LP
+--------------------------------------- */
+.title {
+  -webkit-animation: wind 8s ease 0s infinite;
+  animation: wind 8s ease 0s infinite;
+}
+
+@keyframes wind {
+  0% {
+    transform: translateY(0);
+  }
+  33.33333% {
+    transform: translateY(10px);
+  }
+  66.66667% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes wind {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  33.33333% {
+    -webkit-transform: translateY(10px);
+  }
+  66.66667% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+.ha {
+  animation-delay: 2s;
+}
+
+.n {
+  animation-delay: 4s;
+}
+
+.no {
+  animation-delay: 6s;
+}
+
+.u {
+  animation-delay: 8s;
+}
+
+.de {
+  animation-delay: 2s;
+}
+
+.ten {
+  animation-delay: 4s;
+}
+
+.shi {
+  animation-delay: 6s;
+}
+
+.ze {
+  animation-delay: 8s;
+}
+
+.n2 {
+  animation-delay: 2s;
+}
+
+.to {
+  animation-delay: 4s;
+}
+
+.ku {
+  animation-delay: 6s;
+}
+
+.ra {
+  animation-delay: 8s;
+}
+
+.su {
+  animation-delay: 2s;
 }/*# sourceMappingURL=style.css.map */

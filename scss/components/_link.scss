@@ -46,7 +46,7 @@
 			transition: 1s;
 			&::after{
 				content: "";
-				background-image: url(../images/SVG/logo_text.svg);
+				background-image: url(../images/logo/SVG/logo_text.svg);
 				position: absolute;
 				top: 50%;
 				left: 50%;
@@ -101,7 +101,7 @@
 				&::after{
 					top: 55%;
 					left: 55%;
-					opacity: .2;
+					opacity: .1;
 					filter: drop-shadow(2px 2px 3px black);
 				}
 			}
