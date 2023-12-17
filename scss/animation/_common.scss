@@ -24,7 +24,7 @@
     /* ---------------------------------------
         zoomアニメーション
     --------------------------------------- */
-    &-zoomImg .imgBox img,&-zoomImg:hover .imgBox img,
+    &-scOutImg,
     /* ---------------------------------------
         オリジナルアニメーション
     --------------------------------------- */
@@ -52,19 +52,33 @@
             &.-sp85{animation-duration:8.5s;}
             &.-sp9 {animation-duration:9s;}
             &.-sp95{animation-duration:9.5s;}
-            &.-sp10 {animation-duration:10s;}
+            &.-sp10 {animation-duration:10s;
+                img{animation-duration:10s}
+            }
             // スクロール化
             &.-sc20{
                 animation-timeline: view();
                 animation-range: entry -20% contain 20%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry -20% contain 20%;
+                }
             }
             &.-sc30{
                 animation-timeline: view();
                 animation-range: entry -10% contain 30%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry -10% contain 30%;
+                }
             }
             &.-sc40{
                 animation-timeline: view();
                 animation-range: entry 0% contain 40%;
+                img{
+                    animation-timeline: view();
+                    animation-range: entry 0% contain 40%;
+                }
             }
 
         }

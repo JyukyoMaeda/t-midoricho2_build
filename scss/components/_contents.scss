@@ -75,7 +75,7 @@
 			}
 			&.-f-des{
 				bottom: 1px;
-				left: 92%;
+				left: 90%;
 				transform: translateX(-50%);
 				white-space: nowrap;
 				// width: auto;
@@ -192,8 +192,8 @@
 					}
 					// タイトル > 右下
 					&.-f-title_r{
-						top: 84%;
-						left: 80%;
+						top: 82%;
+    					left: 83%;
 						&::after{
 							position: absolute;
 							top: 120%;
@@ -205,14 +205,14 @@
 					//　タイトル >  コンセプトページ
 					&.-concept{&::after{content: "コンセプト";}}
 					&.-layout{&::after{content: "レイアウト";}}
-					&.-layout{&::after{content: "プラン";}}
+					&.-plan{&::after{content: "プラン";}}
 					&.-equipment{&::after{content: "設備・仕様";}}
 					&.-location{&::after{content: "周辺環境";}}
 
 				}
 				@include min(768){// tb
 					top: 50%;
-					left: 80%;
+					left: 75%;
 					width: 38%;
 				}
 				@include min(1400){
@@ -281,19 +281,20 @@
 					left: 77%;
 					width: 5%;
 					@include min(768){// tb
-						top: 18%;
-						left: 89%;
+						top: 21%;
+						left: 84%;
 						width: 2.5%;
 					}
 					@include min(1400){// pc
+						top: 18%;
 						left: 87%;
 						width: 2%;
 					}
 				}
 				&_04{// 緑
 					@include min(768){// tb
-						top: 61%;
-						left: 60%;
+						top: 60%;
+						left: 57%;
 						width: 2.5%;
 					}
 					@include min(1400){// pc
@@ -309,7 +310,7 @@
 				width: 50%;
 				@include min(768){// tb
 					top: 22%;
-					left: 68.5%;
+					left: 63.5%;
 					width: 20%;
 				}
 				@include min(1400){// pc
@@ -366,27 +367,3 @@
 		}
 	}
 }
-
-	// 横幅
-	.w1100{
-		@include min(768){
-			width: 100%;
-			margin: auto;
-		}
-		@include min(1100){
-			width: 83% !important;
-			max-width: 1100px;
-		}
-	}
-	.w95s{
-		@include max(768){
-			width: 95% !important;
-			margin: auto;
-		}
-	}
-	.w90s{
-		@include max(768){
-			width: 90% !important;
-			margin: auto;
-		}
-	}

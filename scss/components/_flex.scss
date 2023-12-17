@@ -200,13 +200,13 @@
         flex-wrap: wrap;
         @include min(768){flex-wrap: nowrap;}
         li{
-            &:nth-child(1){width: 60%;}
-            &:nth-child(2){width: 14%;}
-            &:nth-child(3){width: 25%;}
+            &:nth-child(1){width: 54%;}
+            &:nth-child(2){width: 16%;}
+            &:nth-child(3){width: 30%;}
             @include min(768){
                 margin: 0 !important;
-                &:nth-child(1){width: 48%;}
-                &:nth-child(2){width: 7%;}
+                &:nth-child(1){width: 47%;}
+                &:nth-child(2){width: 8%;}
                 &:nth-child(3){width: 45%;}
             }
             @include min(1400){
@@ -226,17 +226,27 @@
                 @include min(768){
                     margin: 0 !important;
                     &:nth-child(1){width: 60%;}
-                    &:nth-child(2){width: 10%;}
-                    &:nth-child(3){width: 30%;}
+                    &:nth-child(2){
+                        width: 15%;
+                        // padding-top: .6%;
+                    }
+                    &:nth-child(3){width: 25%;}
 
-                    &:nth-child(2),
-                    &:nth-child(3){padding: 1% 0;}
+                    // &:nth-child(2),
+                    // &:nth-child(3){padding: 1% 0;}
                 }
                 @include min(1400){
                     margin: 0 !important;
-                    &:nth-child(1){width: 60%;}
-                    &:nth-child(2){width: 10%;}
-                    &:nth-child(3){width: 30%;}
+                    &:nth-child(1){width: 58%;}
+                    &:nth-child(2){
+                        width: 12%;
+                        padding-top: .5%;
+                        margin-top: 0.5% !important;
+                    }
+                    &:nth-child(3){
+                        width: 30%;
+                        margin-top: 0.5% !important;
+                    }
                 }
             }
             
@@ -250,11 +260,15 @@
                 &:nth-child(3){width: 75%;}
                 @include min(768){
                     &:nth-child(1){width: 100%;}
-                    &:nth-child(2){width: 15%;}
-                    &:nth-child(3){width: 85%;}
+                    &:nth-child(2){width: 24%;}
+                    &:nth-child(3){width: 76%;}
 
-                    &:nth-child(2),
+                    // &:nth-child(2),
                     &:nth-child(3){padding: 1% 0;}
+                }
+                @include min(1000){
+                      &:nth-child(2),
+                      &:nth-child(3){padding: 1% 0;}
                 }
                 @include min(1400){
                     &:nth-child(1){width: 100%;}

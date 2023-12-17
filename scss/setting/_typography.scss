@@ -79,7 +79,12 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
 
 // 大きさ
 h1,h2,h3,h4,h5,h6,p,a,span,label{
-        &.s-SS{font-size: 10px;}
+        &.s-SS{
+            font-size: 10px;
+            @include min(768){
+                font-size: clamp(10px, 2vw, 12px);
+            }
+        }
         &.s-S{
             font-size: 11px;
             @include min(768){
@@ -323,5 +328,5 @@ p, span, a {
 
 // span
 span{
-    &.-inline{display: inline-block !important;}
+    &.-block{display: block !important;}
 }

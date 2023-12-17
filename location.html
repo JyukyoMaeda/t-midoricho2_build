@@ -182,19 +182,19 @@
     <main class="c-container">
         <!-- ファーストビュー -->
         <div class="c-contents -f-view w1100 mgb5 mgb5s">
-            <div class="imgBox">
+            <div class="imgBox a-fviewOutImg">
                 <img class="sp"    src="images/f-view/location_s.png" alt="周辺環境ページ_ファーストビュー">
                 <img class="tb-pc" src="images/f-view/location.png"   alt="周辺環境ページ_ファーストビュー">
             </div>
             <p class="tb-pc c-contentsBox -f-des -w -white -ws-n -right">宮沢湖／約2,900ｍ（自動車 約8分）</p>
             <!-- SPのみ / ページタイトル -->
-            <h1 class="sp c-contentsBox -f-title -f-title_c -location -ws-n -white s-3L">LOCATION</h1>
+            <h1 class="sp c-contentsBox -f-title -f-title_c -location -ws-n -white s-3L a-fade -sp3">LOCATION</h1>
         </div>
         <!-- コンテンツ -->
         <div class="c-contents w1100 mgb10 mgb10s">
             <div class="c-contents-inner">
                 <!-- コンテンツ > タイトル -->
-                <h2 class="c-title s-LL -left -lh-n mgb2 mgb3s">
+                <h2 class="c-title s-LL -left -lh-n mgb2 mgb3s a-fadeUp -sc40">
                     <ul class="c-flex -title-Icon">
                         <li><img src="images/logo/page-title-icon.png" alt="黄色い家"></li>
                         <li>
@@ -203,7 +203,7 @@
                     </ul>
                 </h2>
                 <!-- コンテンツ > 説明 -->
-                <p class="s-M -color01 -f-gothic -left -lh-1_5 -lh-1_5_s mgb5 mgb5s">
+                <p class="s-M -color01 -f-gothic -left -lh-1_5 -lh-1_5_s mgb5 mgb5s a-fadeUp -sc40">
                     飯能市は、奥武蔵の豊かな自然に包まれた心潤う街です。<br><br>
                     宮沢湖は天然温泉施設と遊歩道のある美しい湖。四季折々に移りゆく山の景色を楽しめます。<br><br>
                     住まい周辺は、駅の大型商業施設を始め、便利な施設が充実しています。
@@ -221,29 +221,41 @@
             </div>
             <!-- ---------------- 【お店情報エリア / メッツァビレッジ】 ------------------- -->
             <div class="c-contents mgb20 mgb10s">
-                <img class="mgb1 mgb2s" src="images/pic/location01.jpg"  alt="メッツァビレッジ">
-                <ul class="c-flex -shop-information w95s pdl1s pdr1s">
-                    <li class="mgb2s"><p class="s-L -color02 -left -lh-1">メッツァビレッジ／約2,900m<span class="s-M -color02 -inline pdl1">(自動車約8分)</span></p></li>
-                    <li class=""><p class="colorBox s-M -center -white">営業時間</p></li>
+                <div class="a-zoomImg mgb1 mgb2s">
+                    <div class="imgBox">
+                        <img class="" src="images/pic/location01.jpg"  alt="メッツァビレッジ">
+                    </div>
+                </div>
+                <ul class="c-flex -shop-information w90 w95s pdl1s pdr1s">
+                    <li class="mgb2s"><p class="s-L -s14 -color02 -left -lh-1"><span class="-ws-n -color02">メッツァビレッジ／約2,900m</span><br class="sp"><span class="s-M -ws-n -color02 pdl1">(自動車約8分)</span></p></li>
+                    <li class="pdl1s"><p class="colorBox s-M -center -white -lh-1_5_s">営業時間</p></li>
                     <li class="pdl1 pdl1s">
-                        <p class="tb-pc s-L -color02 -left -lh-1">10:00～20:00<span class="tb-pc s-S -color02 -inline -lh-2 pdl1 pdr3s">※冬季・年末年始は営業時間が異なります。</span></p>
-                        <p class="sp  s-L -color02 -left -lh-1">10:00～20:00</p>
+                        <p class="tb-pc s-L -color02 -left -lh-1">10:00～20:00<span class="s-S -color02 -lh-2 pdl1 pdr3s">※冬季・年末年始は営業時間が異なります。</span></p>
+                        <p class="sp s-L -s14 -color02 -left -lh-1 -lh-1_5_s">10:00～20:00</p>
                     </li>
                 </ul>
                 <p class="sp s-S -color02 -right pdl1 pdr3s">※冬季・年末年始は営業時間が異なります。</p>
             </div>
             <!-- ---------------- 【SP1カラム、PC2カラム ------------------- -->
-            <div class="c-contents w90s mgb20 mgb10s">
+            <div class="c-contents w90 mgb20 mgb10s">
                 <h2 class="c-contents_title -koutsu s-LL -color02 -center mgb10 mgb10s">交通</h2>
                 <ul class="c-flex -col1_2 -cr_s">
-                    <li class="c-borderBox -solid mgb8s">
-                        <img class="mgb3 mgb3s" src="images/pic/location02.jpg" alt="東飯能駅">
-                        <p class="c-contents_subTitle -stationBox -s_2 -borderBtm -line s-L -color02 -left">「東飯能」駅／徒歩約7分 (約560m)</p>
+                    <li class="c-borderBox -solid mgb8s a-flipLeft -sc20">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img src="images/pic/location02.jpg" alt="東飯能駅">
+                            </div>
+                        </div>
+                        <p class="c-contents_subTitle -stationBox -s_2 -borderBtm -line s-L -color02 -left">「東飯能」駅／徒歩約7分 <span class="s-M -color02">(約560m)</span></p>
                         <p class="s-M -color01 -lh-1_5 -left">八王子方面や川越・大宮方面へは、JR八高線を利用することでスムーズにアクセスできます。</p>
                     </li>
-                    <li class="c-borderBox -solid mgb8s">
-                        <img class="mgb3 mgb3s" src="images/pic/location03.jpg" alt="飯能駅">
-                        <p class="c-contents_subTitle -stationBox -s_1 -borderBtm -line s-L -color02 -left">「飯能」駅／徒歩約17分 (約1,300m)</p>
+                    <li class="c-borderBox -solid mgb8s a-flipLeft -sc40">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img src="images/pic/location03.jpg" alt="飯能駅">
+                            </div>
+                        </div>
+                        <p class="c-contents_subTitle -stationBox -s_1 -borderBtm -line s-L -color02 -left">「飯能」駅／徒歩約17分<span class="s-M -color02">(約1,300m)</span> </p>
                         <p class="s-M -color01 -lh-1_5 -left">始発駅の飯能駅から都心へダイレクトアクセス。早朝時は、東京メトロ副都心線で新宿や横浜方面へも乗換なしで行けます。</p>
                     </li>
                 </ul>
@@ -268,117 +280,167 @@
                 </div>
             </div>
             <!-- ---------------- 【SP1カラム、PC2カラム ------------------- -->
-            <div class="c-contents w90s mgb5 mgb10s">
+            <div class="c-contents w90 mgb5 mgb10s">
                 <h2 class="c-contents_title -location s-LL -color02 -center mgb10 mgb10s">周辺環境</h2>
-                <ul class="c-flex -col1_2 -cr_s">
-                    <li class="mgb8s">
-                        <img class="mgb3 mgb3s" src="images/pic/location04.jpg" alt="ベルク飯能緑町店">
+                <ul class="c-flex -col1_2">
+                    <li class="mgb8s a-fadeUp -sc20">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location04.jpg" alt="ベルク飯能緑町店">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col2 pdl1s pdr1s mgb3">
-                            <li class="mgb2s"><p class="s-L -color02 -left -lh-1">ベルク飯能緑町店／約350m</p></li>
-                            <li class="pdl1 pdl1s"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
-                            <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">9:00～24:00</p></li>
+                            <li class="mgb2s">
+                                <p class="tb-pc s-L -color02 -left -lh-1">ベルク飯能緑町店／約350m</p>
+                                <p class="sp s-L -color02 -left -lh-1">ベルク飯能緑町店／<span class="s-M -color02">約350m</span></p>
+                            </li>
+                            <li class="pdl1 pdl1s"><p class="colorBox s-SS -center -white">営業時間</p></li>
+                            <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1_5">9:00～24:00</p></li>
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">八王子方面や川越・大宮方面へは、JR八高線を利用することでスムーズにアクセスできます。</p>
                     </li>
-                    <li class="mgb8s">
-                        <img class="mgb3 mgb3s" src="images/pic/location05.jpg" alt="丸広百貨店飯能店">
+                    <li class="mgb8s a-fadeUp -sc40">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location05.jpg" alt="丸広百貨店飯能店">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col2 pdl1s pdr1s mgb3">
-                            <li class="mgb2s"><p class="s-L -color02 -left -lh-1">丸広百貨店飯能店／約500m</p></li>
-                            <li class="pdl1 pdl1s"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
-                            <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">10:00～19:00</p></li>
+                            <li class="mgb2s">
+                                <p class="tb-pc s-L -color02 -left -lh-1">丸広百貨店飯能店／約500m</p>
+                                <p class="sp s-L -color02 -left -lh-1">丸広百貨店飯能店／<span class="s-M -color02">約500m</span></p>
+                            </li>
+                            <li class="pdl1 pdl1s"><p class="colorBox s-SS -center -white ">営業時間</p></li>
+                            <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1_5">10:00～19:00</p></li>
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">始発駅の飯能駅から都心へダイレクトアクセス。早朝時は、東京メトロ副都心線で新宿や横浜方面へも乗換なしで行けます。</p>
                     </li>
                 </ul>
             </div>
             <!-- ---------------- 【SP2カラム、PC3カラム ------------------- -->
-            <div class="c-contents w90s mgb20 mgb10s">
+            <div class="c-contents w90 mgb20 mgb10s">
                 <ul class="c-flex -col2_3">
                     <!-- 1~3 -->
-                    <li class="mgb5 mgb3s">
-                        <img class="mgb3 mgb3s" src="images/pic/location06.jpg" alt="ビッグ・エー飯能緑町店">
+                    <li class="mgb5 mgb3s a-fadeUp -sc20">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location06.jpg" alt="ビッグ・エー飯能緑町店">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
-                            <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">ビッグ・エー飯能緑町店／約150m</p></li>
-                            <li class="mgb2"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
-                            <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">24時間営業</p></li>
+                            <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">ビッグ・エー飯能緑町店／<br class="sp">約150m</p></li>
+                            <li class="mgb2"><p class="colorBox s-SS -center -white ">営業時間</p></li>
+                            <li class="pdl1 pdl2s"><p class="s-M -color02 -left -lh-1_5_s">24時間営業</p></li>
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">食料品や日用品、アルコール類など品ぞろえが豊富。24時間営業なので帰りが遅いご家庭も安心です。（午前2時～午前3時まで休業）</p>
                     </li>
-                    <li class="mgb5 mgb3s">
-                        <img class="mgb3 mgb3s" src="images/pic/location07.jpg" alt="ウエルシア薬局飯能緑町店">
+                    <li class="mgb5 mgb3s a-fadeUp -sc40">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location07.jpg" alt="ウエルシア薬局飯能緑町店">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
-                            <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">ウエルシア薬局飯能緑町店／約120m</p></li>
-                            <li class="mgb2"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
-                            <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">9:00～24:00</p></li>
+                            <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">ウエルシア薬局飯能緑町店／<br class="sp">約120m</p></li>
+                            <li class="mgb2"><p class="colorBox s-SS -center -white ">営業時間</p></li>
+                            <li class="pdl1 pdl2s"><p class="s-M -color02 -left -lh-1_5_s">9:00～24:00</p></li>
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">日用品や薬、食料品など品ぞろえが豊富。徒歩2分という近さで、夜は24時まで営業。仕事帰りに立ち寄れるので便利です。</p>
                     </li>
-                    <li class="mgb5 mgb3s">
-                        <img class="mgb3 mgb3s" src="images/pic/location08.jpg" alt="ダイソー飯能緑町店">
+                    <li class="mgb5 mgb3s a-fadeUp -sc40">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location08.jpg" alt="ダイソー飯能緑町店">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
                             <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">ダイソー飯能緑町店／約50m</p></li>
-                            <li class="mgb2"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
-                            <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">9:30～20:30</p></li>
+                            <li class="mgb2"><p class="colorBox s-SS -center -white ">営業時間</p></li>
+                            <li class="pdl1 pdl2s"><p class="s-M -color02 -left -lh-1_5_s">9:30～20:30</p></li>
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">収納小物やDIY、日用品などが充実。痒い所に手が届く、便利アイテムがリーズナブルな価格で手に入る主婦の強い味方です。</p>
                     </li>
 
                     <!-- 4~6 -->
-                    <li class="mgb5 mgb3s">
-                        <img class="mgb3 mgb3s" src="images/pic/location09.jpg" alt="飯能市立富士見小学校">
+                    <li class="mgb5 mgb3s a-fadeUp -sc20">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location09.jpg" alt="飯能市立富士見小学校">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
                             <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">飯能市立富士見小学校／約930m</p></li>
-                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
+                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white">営業時間</p></li>
                             <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">9:30～20:30</p></li> -->
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">現地から徒歩12分。低学年の児童も比較的通いやすい距離にあります。近くに警察署があり、よくパトロールをしているので登下校の際も安心です。</p>
                     </li>
-                    <li class="mgb5 mgb3s">
-                        <img class="mgb3 mgb3s" src="images/pic/location10.jpg" alt="飯能市立飯能第一中学校">
+                    <li class="mgb5 mgb3s a-fadeUp -sc30">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location10.jpg" alt="飯能市立飯能第一中学校">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
                             <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">飯能市立飯能第一中学校／約1,110m</p></li>
-                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
+                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white">営業時間</p></li>
                             <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">9:30～20:30</p></li> -->
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">数年前に体育館を改修。部活動が盛んで、活気のある中学校です。吹奏楽部は過去に全国大会への出場経験もあり、市民会館で定期演奏会も行っています。</p>
 
                     </li>
-                    <li class="mgb5 mgb3s">
-                        <img class="mgb3 mgb3s" src="images/pic/location11.jpg" alt="さゆり幼稚園">
+                    <li class="mgb5 mgb3s a-fadeUp -sc40">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location11.jpg" alt="さゆり幼稚園">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
                             <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">さゆり幼稚園／約160m</p></li>
-                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
+                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white">営業時間</p></li>
                             <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">9:30～20:30</p></li> -->
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">現地から徒歩2分。2018年に2階建ての新園舎に建替え。ロケット滑り台の遊具が人気！屋上は人工芝の広場となっており、思いっきり遊べます。</p>
                     </li>
 
                     <!-- 7~9 -->
-                    <li class="mgb5 mgb3s">
-                        <img class="mgb3 mgb3s" src="images/pic/location12.jpg" alt="すぎのこ保育園">
+                    <li class="mgb5 mgb3s a-fadeUp -sc20">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location12.jpg" alt="すぎのこ保育園">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
                             <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">すぎのこ保育園／約620m</p></li>
-                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
+                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white">営業時間</p></li>
                             <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">9:30～20:30</p></li> -->
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">現地から徒歩8分。0歳児から就学前までの一貫した保育を行っています。七夕や運動会、すぎのこまつりなどの行事も毎年行われています。</p>
 
                     </li>
-                    <li class="mgb5 mgb3s">
-                        <img class="mgb3 mgb3s" src="images/pic/location13.jpg" alt="水押公園">
+                    <li class="mgb5 mgb3s a-fadeUp -sc30">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location13.jpg" alt="水押公園">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
                             <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">水押公園／約220m</p></li>
-                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
+                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white">営業時間</p></li>
                             <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">9:30～20:30</p></li> -->
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">現地から徒歩3分。滑り台やブランコ、うんていなど遊具も充実。ボール遊びや追いかけっこもできる広い公園。トイレやベンチも備わっています。</p>
 
                     </li>
-                    <li class="mgb5 mgb3s">
-                        <img class="mgb3 mgb3s" src="images/pic/location14.jpg" alt="佐瀬病院">
+                    <li class="mgb5 mgb3s a-fadeUp -sc40">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location14.jpg" alt="佐瀬病院">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
                             <li class="mgb2 pdb2s"><p class="s-M -color02 -left -lh-1">佐瀬病院／約320m</p></li>
-                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
+                            <!-- <li class="mgb2"><p class="colorBox s-SS -center -white">営業時間</p></li>
                             <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">9:30～20:30</p></li> -->
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">現地から徒歩4分。飯能市で開業して50年超の地域に根付いた医療機関。【診療科目】内科・整形外科・糖尿病内科・循環器科・リハビリテーション他。</p>
@@ -388,23 +450,31 @@
             </div>
 
             <!-- ---------------- 【SP1カラム、PC2カラム ------------------- -->
-            <div class="c-contents w90s mgb5 mgb10s">
+            <div class="c-contents w90 mgb5 mgb10s">
                 <h2 class="c-contents_title -spot s-LL -color02 -center mgb10 mgb10s">おすすめスポット</h2>
-                <ul class="c-flex -col1_2 -cr_s">
-                    <li class="mgb8s">
-                        <img class="mgb3 mgb3s" src="images/pic/location15.jpg" alt="宮沢湖温泉（喜楽里別邸）">
+                <ul class="c-flex -col1_2">
+                    <li class="mgb8s a-fadeUp -sc20">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location15.jpg" alt="宮沢湖温泉（喜楽里別邸）">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
-                            <li class="mgb2s"><p class="s-L -color02 -left -lh-1">宮沢湖温泉（喜楽里別邸）／<span class="s-M -color02 -inline">約2,900m(自動車約8分)</span></p></li>
-                            <!-- <li class="pdl1 pdl1s"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
+                            <li class="pdb2s mgb2s"><p class="s-L -color02 -left -lh-1">宮沢湖温泉（喜楽里別邸）／<br class="sp"><span class="s-M -color02">約2,900m(自動車約8分)</span></p></li>
+                            <!-- <li class="pdl1 pdl1s"><p class="colorBox s-SS -center -white">営業時間</p></li>
                             <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">9:00～24:00</p></li> -->
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">季節ごとの風景が楽しめる展望露天風呂や、医療界でも注目の『高濃度炭酸泉』や白湯、サウナ、岩盤浴など充実の施設。自然の中でリラックスできます。</p>
                     </li>
-                    <li class="mgb8s">
-                        <img class="mgb3 mgb3s" src="images/pic/location16.jpg" alt="丸広百貨店飯能店">
+                    <li class="mgb8s a-fadeUp -sc40">
+                        <div class="a-zoomImg mgb3 mgb3s">
+                            <div class="imgBox">
+                                <img class="" src="images/pic/location16.jpg" alt="飯能河原">
+                            </div>
+                        </div>
                         <ul class="c-flex -shop-information_col3 pdl1s pdr1s mgb3">
-                            <li class="mgb2s"><p class="s-L -color02 -left -lh-1">飯能河原／<span class="s-M -color02 -inline">約2,100m(自動車約6分)</span></p></li>
-                            <!-- <li class="pdl1 pdl1s"><p class="colorBox s-SS -center -white pdt1 pdb5">営業時間</p></li>
+                            <li class="pdb2s mgb2s"><p class="s-L -color02 -left -lh-1">飯能河原／<span class="s-M -color02">約2,100m(自動車約6分)</span></p></li>
+                            <!-- <li class="pdl1 pdl1s"><p class="colorBox s-SS -center -white">営業時間</p></li>
                             <li class="pdl1 pdl1s"><p class="s-M -color02 -left -lh-1">10:00～19:00</p></li> -->
                         </ul>
                         <p class="s-M -color01 -lh-1_5 -left">多くの人で賑わう、深緑の木々と赤い割岩橋が映える川遊びスポット。器材・材料は周辺店舗でレンタル・調達が可能、手ぶらでバーベキューができます。河原沿いに、カフェや蕎麦屋などの飲食店もあります。</p>

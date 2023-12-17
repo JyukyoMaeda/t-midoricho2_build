@@ -26,16 +26,16 @@
             bottom: -30px;
         }
     }
-    &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN";}}
-    &.-house-layout{&::before{content: "HOUSE LAYOUT";}}
+    &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN"; white-space: nowrap;}}
+    &.-house-layout{&::before{content: "HOUSE LAYOUT"; white-space: nowrap;}}
     &.-gaikou{&::before{content: "EXTERIOR";}}
     &.-kitchen{&::before{content: "KITCHEN";}}
     &.-bathroom{&::before{content: "BATHROOM";}}
     &.-window{&::before{content: "WINDOW";}}
     &.-entrance{&::before{content: "ENTRANCE";}}
     &.-koutsu{&::before{content: "TRAFFIC";}}
-    &.-location{&::before{content: "SURROUNDING ENVIRONMENT";}}
-    &.-spot{&::before{content: "RECOMMENDED SPOTS";}}
+    &.-location{&::before{content: "SURROUNDING ENVIRONMENT"; white-space: nowrap;}}
+    &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}
 
 }
 
@@ -98,11 +98,11 @@
                 top: 42%;
                 font-size: 10px;
                 text-align: center;
-                width: 15%;
+                width: 16%;
                 @include min(768){
                     top: 65%;
                     font-size: 10px;
-                    width: 15%;
+                    width: 16%;
                 }
                 @include min(1400){
                     top: 56%;
@@ -118,12 +118,12 @@
                 top: 0%;
                 font-size: 10px;
                 text-align: center;
-                width: 15%;
+                width: 16%;
                 @include min(768){
                     top: 38%;
                     font-size: 10px;
                     text-align: center;
-                    width: 15%;
+                    width: 16%;
                 }
                 @include min(1400){
                     top: 38%;

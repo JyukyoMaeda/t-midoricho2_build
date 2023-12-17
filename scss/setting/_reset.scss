@@ -18,7 +18,6 @@ ul{
 body{
 	width: 100%;
 	overflow-x: hidden;
-	animation: fadeAnime 3s forwards;
 }
 img{
 	width: 100%;
@@ -35,7 +34,7 @@ h1,h2,h3,h4,h5,h6,p,a {
 	// font-familyなど
 }
 a{
-	display: block;
+	// display: block;
 	height: 100%;
 	text-decoration: none;
 }
