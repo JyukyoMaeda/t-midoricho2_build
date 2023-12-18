@@ -7,7 +7,10 @@
         background: black;
         overflow: hidden;
         transition: 3s all;
-        img{transition: 1s all;}
+        img{
+            transform: scale(1.01);
+            transition: 1s all;
+        }
         &:hover{
             img{transform: scale(1.05);}
         }

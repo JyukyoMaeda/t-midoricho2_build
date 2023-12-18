@@ -39,6 +39,34 @@
 
 }
 
+// コンテンツ_メインタイトル
+.c-contents_MainTitle{
+    position: relative;
+    &.-icon{
+        &::after{
+            content: "";
+            background: url(../images/logo/page-title-icon.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translateY(-50%);
+            @include min(768){
+                left: 0;
+                width: 25px;
+                height: 25px;
+            }
+            @include min(1400){
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
 // コンテンツ_サブタイトル
 .c-contents_subTitle{
     position: relative;
@@ -107,7 +135,7 @@
                 @include min(1400){
                     top: 56%;
                     font-size: 12px;
-                    width: 12%;
+                    width: 13%;
                 }
             }
         }
@@ -127,7 +155,7 @@
                 }
                 @include min(1400){
                     top: 38%;
-                    width: 12%;
+                    width: 13%;
                     font-size: 12px;
                 }
             }

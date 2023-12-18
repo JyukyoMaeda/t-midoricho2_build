@@ -169,6 +169,7 @@
 					}
 					&.-active{
 						background: $site-color02;
+						pointer-events: none;
 						a,span{
 							color: $main-color--w;
 						}

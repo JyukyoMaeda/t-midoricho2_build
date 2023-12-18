@@ -88,7 +88,7 @@
 		width: 55%;
 		max-width: 230px;
 		height: 100%;
-		padding: 5% 0 0 8%;
+		padding: 5% 5% 0 5%;
 		background: $main-color--w;
 
 		/* 滑らかに表示 */
@@ -96,14 +96,20 @@
 		transform: translateX(100%);
 		z-index: 9999;
 		@include min(768){
-			width: 90%;
-			max-width: 330px;
+			width: 29%;
+			max-width: 230px;
 			padding: 2% 3%;
 			background: $main-color--w;
 		}
+		@include min(1400){
+			width: 90%;
+			max-width: 330px;
+		}
 		li{
-			margin-bottom: 2vh;
+			margin-bottom: 5px;
 			transition: 1s all;
+			@include min(768){margin-bottom: 10px;}
+			@include min(1400){margin-bottom: 10px;}
 			a{
 				position: relative;
 				display: inline-block;
@@ -116,7 +122,7 @@
 					width: 106%;
 					height: 1px;
 					background: inherit;
-					transition: 1s all;
+					transition: 2s all;
 				}
 			}
 
@@ -124,8 +130,10 @@
 			// アクティブ時 アイコンを表示する
 			&.-active{
 				position: relative;
-				transform: scale(1.05);
 				filter: drop-shadow(1px 1px 0px hsla(0, 0%, 0%, 0.322));
+				pointer-events: none;
+				@include min(768){transform: scale(1.05);}
+				@include min(1400){transform: scale(1.1);}
 				a{
 					color: $site-color03;
 					font-weight: bold;
@@ -135,74 +143,69 @@
 				&::after{
 					content: "";
 					position: absolute;
-					top: 40%;
-					left: -10%;
+					top: 50%;
+					left: -8%;
 					transform: translateY(-50%);
-
-					width: 15px;
-					height: 15px;
+					width: 12px;
+					height: 12px;
 					background-image: url(../images/logo/page-title-icon.png);
 					background-size: contain;
 					background-repeat: no-repeat;
 					@include min(768){
-						top: 50%;
-						left: -5%;
+						left: -6%;
 						width: 10px;
 						height: 10px;
 					}
-					@include min(1400){
-						top: 50%;
+					@include min(1200){
+						top: 47%;
 						left: -12%;
-						width: 20px;
-						height: 20px;
+						width: 15px;
+						height: 15px;
+					}
+					@include min(1400){
+						left: -8%;
+						width: 13px;
+						height: 13px;
 					}
 				}
-				&:hover{
-					transform: scale(1);
-					a{
-						color: $site-color03;
-						&::before{
-							background: inherit;
-						}
-						span{color: $site-color03;}
-					}
-				}
+				// &:hover{
+				// 	transform: scale(1);
+				// 	a{
+				// 		color: $site-color03;
+				// 		&::before{
+				// 			background: inherit;
+				// 		}
+				// 		span{color: $site-color03;}
+				// 	}
+				// }
 			}
 			&:hover{
 				transform: scale(1.05);
 				a{
-					color: $site-color02;
+					color: $site-color01;
 					&::before{
-						background: $site-color02;
+						background: $site-color01;
 					}
-					span{color: $site-color02;}
+					span{color: $site-color01;}
 				}
 			}
 		}
 	}
 	&__contactArea{
-		position: absolute;
-		top: 55%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
+		position: relative;
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
-		width: 80%;
 		height: 100px;
 		margin: auto;
-		border: 1px solid $main-color--b;
+		border: 1px solid $site-color02;
 		@include min(768){
 			top: 47%;
-			width: 80%;
-			height: 120px;
+			height: 105px;
 		}
 		@include min(1400){
-			top: 50%;
-			width: 70%;
-			height: 120px;
+			height: 110px;
 		}
 		.c-hnav__top{
 			grid-column: 1/3;
@@ -231,7 +234,7 @@
 			transform: translate(-50%, -50%);
 			height: 1px;
 			width: 98%;
-			background: $main-color--b;
+			background: $site-color02;
 		}
 	}
 	&__logo{
@@ -259,6 +262,16 @@
 		transform: translate(-50%, -50%);
 		white-space: nowrap;
 		transition: .5s all;
+		@include min(768){top: 33%;}
+	}
+	&_main02{
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		white-space: nowrap;
+		transition: .5s all;
+		@include min(768){top: 40%;}
 	}
 	&_sub{
 		position: absolute;
@@ -267,28 +280,36 @@
 		transform: translate(-50%, -50%);
 		white-space: nowrap;
 		transition: .5s all;
+		// @include min(768){top: 65%;}
 	}
 	&_sub02{
 		position: absolute;
-		top: 70%;
+		top: 67%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		white-space: nowrap;
 		transition: .5s all;
-		@include min(768){
-			top: 62%;
-		}
-		@include min(1400){
-			top: 70%;
-		}
+		@include min(768){top: 68%;}
+		@include min(1400){top: 70%;}
+	}
+	&_sub03{
+		position: absolute;
+		top: 67%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		white-space: nowrap;
+		transition: .5s all;
+		@include min(768){top: 64%;}
+		@include min(1400){top: 60%;}
 	}
 	&_footer{
 		// アクティブ時
 		&.-active{
+			pointer-events: none;
 			span{
 				&::after{
 					width: 100%;
-					height: 1.5px;
+					height: 1px;
 					background: $site-color02;
 				}
 			}

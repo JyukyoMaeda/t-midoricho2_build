@@ -96,9 +96,14 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
             font-size: 12px;
             @include min(768){font-size: clamp(12px, 1.5vw, 16px);}
         }
+        &.s-ML{
+            font-size: 16px;
+            @include min(768){font-size: clamp(16px, 2vw, 20px);}
+            &.-s14{@include max(768){font-size: 14px;}}
+        }
         &.s-L{
             font-size: 16px;
-            @include min(768){font-size: clamp(16px, 2vw, 24px);}
+            @include min(768){font-size: clamp(16px, 2vw, 22px);}
             &.-s14{@include max(768){font-size: 14px;}}
         }
         &.s-LL{
@@ -109,13 +114,11 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
             font-size: 28px;
             @include min(768){font-size: clamp(21px, 3vw, 48px);}
         }
-        &.s-mugen{
-            font-size: 24px;
-            transform: scale(5);
-            @include min(768){
-                font-size: clamp(16px, 2.8vw, 53px);
-                transform: scale(5);
-            }
+        &.s-kome{
+            font-size: 10px;
+            color: $site-color_kome;
+            transform: scale(.8);
+            @include min(768){font-size: clamp(10px, 2vw, 12px);}
         }
         &.s-number{
             font-size: 16px;
