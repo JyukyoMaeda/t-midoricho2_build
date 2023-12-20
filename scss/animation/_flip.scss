@@ -8,10 +8,7 @@
         animation-name: flipDownAnime;
         animation-fill-mode:forwards;
         opacity: 0;
-        img{
-            filter: drop-shadow(2px 2px 2px gray);
-            transition: 1s all;
-        }
+        img{transition: 1s all;}
     }
     @keyframes flipDownAnime{
         from {
@@ -31,10 +28,7 @@
         animation-name: flipLeftAnime;
         animation-fill-mode:forwards;
         opacity: 0;
-        img{
-            filter: drop-shadow(2px 2px 2px gray);
-            transition: 1s all;
-        }
+        img{transition: 1s all;}
     }
     @keyframes flipLeftAnime{
         from {
@@ -53,10 +47,7 @@
         animation-name: flipRightAnime;
         animation-fill-mode:forwards;
         opacity: 0;
-        img{
-            filter: drop-shadow(2px 2px 2px gray);
-            transition: 1s all;
-        }
+        img{transition: 1s all;}
     }
     @keyframes flipRightAnime{
         from {

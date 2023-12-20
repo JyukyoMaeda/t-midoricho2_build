@@ -80,6 +80,7 @@
                     animation-range: entry 0% contain 40%;
                 }
             }
-
+            // シャドウ
+            &.-sh{filter: drop-shadow(2px 2px 2px gray);}
         }
 }

@@ -33,7 +33,7 @@
     &.-bathroom{&::before{content: "BATHROOM";}}
     &.-window{&::before{content: "WINDOW";}}
     &.-entrance{&::before{content: "ENTRANCE";}}
-    &.-koutsu{&::before{content: "TRAFFIC";}}
+    &.-koutsu{&::before{content: "ACCESS";}}
     &.-location{&::before{content: "SURROUNDING ENVIRONMENT"; white-space: nowrap;}}
     &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}
 

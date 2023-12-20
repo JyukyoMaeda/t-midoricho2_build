@@ -3725,7 +3725,7 @@ button.swiper-pagination-bullet {
   content: "ENTRANCE";
 }
 .c-contents_title.-koutsu::before {
-  content: "TRAFFIC";
+  content: "ACCESS";
 }
 .c-contents_title.-location::before {
   content: "SURROUNDING ENVIRONMENT";
@@ -5002,6 +5002,9 @@ a {
   animation-timeline: view();
   animation-range: entry 0% contain 40%;
 }
+.a-bg-color.-sh, .a-text-color.-sh, .a-rotate-bg.-sh, .a-fade.-sh, .a-fadeUp.-sh, .a-fadeDown.-sh, .a-fadeLeft.-sh, .a-fadeRight.-sh, .a-flipDown.-sh, .a-flipLeft.-sh, .a-flipRight.-sh, .a-moveUp.-sh, .a-moveDown.-sh, .a-scOutImg.-sh, .a-bird_r.-sh, .a-bird_l01.-sh, .a-bird_l02.-sh, .a-purupuru.-sh {
+  filter: drop-shadow(2px 2px 2px gray);
+}
 
 .a {
   /* ----------------------------
@@ -5020,7 +5023,6 @@ a {
   opacity: 0;
 }
 .a-flipDown img {
-  filter: drop-shadow(2px 2px 2px gray);
   transition: 1s all;
 }
 @keyframes flipDownAnime {
@@ -5039,7 +5041,6 @@ a {
   opacity: 0;
 }
 .a-flipLeft img {
-  filter: drop-shadow(2px 2px 2px gray);
   transition: 1s all;
 }
 @keyframes flipLeftAnime {
@@ -5058,7 +5059,6 @@ a {
   opacity: 0;
 }
 .a-flipRight img {
-  filter: drop-shadow(2px 2px 2px gray);
   transition: 1s all;
 }
 @keyframes flipRightAnime {
