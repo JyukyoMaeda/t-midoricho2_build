@@ -2,6 +2,7 @@
 // font-family
 $f-mincho: shippori-mincho, sans-serif;// 明朝
 $f-gothic: source-han-sans-japanese, sans-serif;// ゴシック
+$f-cezanne: "fot-cezanne-pron", sans-serif;
 $f-01: garamond-premier-pro, serif;// Garamond Premier Pro
 $f-02: acumin-pro, sans-serif;
 
@@ -57,6 +58,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
 
     // フォントファミリー
     &.-f-gothic{font-family: $f-gothic;}
+    &.-f-cezan{font-family: $f-cezanne;}
     &.-f-mincho{font-family: $f-mincho;}
     &.-f-gara{
         font-family: $f-01;
@@ -108,7 +110,8 @@ h1,h2,h3,h4,h5,h6,p,a,span,label{
         }
         &.s-LL{
             font-size: 21px;
-            @include min(768){font-size: clamp(18px, 3vw, 32px);}
+            // @include min(768){font-size: clamp(18px, 3vw, 32px);}
+            @include min(768){font-size: clamp(18px, 3vw, 30px);}
         }
         &.s-3L{
             font-size: 28px;

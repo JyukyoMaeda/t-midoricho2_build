@@ -200,6 +200,9 @@ h1.-b, h2.-b, h3.-b, h4.-b, h5.-b, h6.-b, p.-b, a.-b, span.-b, label.-b {
 h1.-f-gothic, h2.-f-gothic, h3.-f-gothic, h4.-f-gothic, h5.-f-gothic, h6.-f-gothic, p.-f-gothic, a.-f-gothic, span.-f-gothic, label.-f-gothic {
   font-family: source-han-sans-japanese, sans-serif;
 }
+h1.-f-cezan, h2.-f-cezan, h3.-f-cezan, h4.-f-cezan, h5.-f-cezan, h6.-f-cezan, p.-f-cezan, a.-f-cezan, span.-f-cezan, label.-f-cezan {
+  font-family: "fot-cezanne-pron", sans-serif;
+}
 h1.-f-mincho, h2.-f-mincho, h3.-f-mincho, h4.-f-mincho, h5.-f-mincho, h6.-f-mincho, p.-f-mincho, a.-f-mincho, span.-f-mincho, label.-f-mincho {
   font-family: shippori-mincho, sans-serif;
 }
@@ -289,7 +292,7 @@ h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL,
 }
 @media (width >= 768px) {
   h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL, label.s-LL {
-    font-size: clamp(18px, 3vw, 32px);
+    font-size: clamp(18px, 3vw, 30px);
   }
 }
 h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L {
@@ -3739,6 +3742,9 @@ button.swiper-pagination-bullet {
 .c-contents_MainTitle {
   position: relative;
 }
+.c-contents_MainTitle .s-LL {
+  padding: 0 1px;
+}
 .c-contents_MainTitle.-icon::after {
   content: "";
   background: url(../images/logo/page-title-icon.png);
@@ -3760,6 +3766,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 1400px) {
   .c-contents_MainTitle.-icon::after {
+    top: 56%;
     width: 30px;
     height: 30px;
   }
@@ -4216,13 +4223,13 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-flex.-shop-information li:nth-child(1) {
-    width: 41%;
+    width: 43%;
   }
   .c-flex.-shop-information li:nth-child(2) {
     width: 9%;
   }
   .c-flex.-shop-information li:nth-child(3) {
-    width: 50%;
+    width: 48%;
   }
 }
 @media (width >= 1400px) {
