@@ -236,6 +236,16 @@ h1.-house_c03, h2.-house_c03, h3.-house_c03, h4.-house_c03, h5.-house_c03, h6.-h
 h1.-house_c04, h2.-house_c04, h3.-house_c04, h4.-house_c04, h5.-house_c04, h6.-house_c04, p.-house_c04, a.-house_c04, span.-house_c04, label.-house_c04 {
   color: #00c5d5;
 }
+h1.-grayOut, h2.-grayOut, h3.-grayOut, h4.-grayOut, h5.-grayOut, h6.-grayOut, p.-grayOut, a.-grayOut, span.-grayOut, label.-grayOut {
+  pointer-events: none;
+  opacity: 0.2;
+}
+h1.-grayOut a, h2.-grayOut a, h3.-grayOut a, h4.-grayOut a, h5.-grayOut a, h6.-grayOut a, p.-grayOut a, a.-grayOut a, span.-grayOut a, label.-grayOut a {
+  pointer-events: none;
+}
+h1.-grayOut a::before, h1.-grayOut a::after, h2.-grayOut a::before, h2.-grayOut a::after, h3.-grayOut a::before, h3.-grayOut a::after, h4.-grayOut a::before, h4.-grayOut a::after, h5.-grayOut a::before, h5.-grayOut a::after, h6.-grayOut a::before, h6.-grayOut a::after, p.-grayOut a::before, p.-grayOut a::after, a.-grayOut a::before, a.-grayOut a::after, span.-grayOut a::before, span.-grayOut a::after, label.-grayOut a::before, label.-grayOut a::after {
+  pointer-events: none;
+}
 
 h1.s-SS, h2.s-SS, h3.s-SS, h4.s-SS, h5.s-SS, h6.s-SS, p.s-SS, a.s-SS, span.s-SS, label.s-SS {
   font-size: 10px;
@@ -2894,6 +2904,9 @@ button.swiper-pagination-bullet {
   .c-header__navArea .c-header__navLists li.-active a, .c-header__navArea .c-header__navLists li.-active span {
     color: #ffffff;
   }
+  .c-header__navArea .c-header__navLists li.-grayOutItem {
+    pointer-events: none;
+  }
 }
 
 .c-footer {
@@ -3004,6 +3017,9 @@ button.swiper-pagination-bullet {
 }
 .c-footer__contactArea .c-footer__contactLists li a {
   display: block;
+}
+.c-footer__contactArea .c-footer__contactLists li.-grayOutItem {
+  pointer-events: none;
 }
 .c-footer__navArea .c-footer__navLists {
   display: flex;
@@ -3422,6 +3438,9 @@ button.swiper-pagination-bullet {
   width: 98%;
   background: #5a8190;
 }
+.c-hnav__contactArea.-grayOutItem {
+  pointer-events: none;
+}
 .c-hnav__logo {
   position: absolute;
   bottom: 0%;
@@ -3578,6 +3597,24 @@ button.swiper-pagination-bullet {
     top: 10%;
     left: 33%;
     width: 1.5%;
+  }
+}
+.c-contents.-h-logo .c-contentsBox.-soldOut {
+  top: 36%;
+  left: 45%;
+  transform: rotate(-5deg) translate(-50%, -50%);
+  width: 70%;
+  z-index: 99;
+  filter: drop-shadow(1px 1px 2px rgb(128, 128, 128));
+}
+.c-contents.-h-logo .c-contentsBox.-soldOut img {
+  background: #5a8190;
+}
+@media (width >= 768px) {
+  .c-contents.-h-logo .c-contentsBox.-soldOut {
+    top: 41%;
+    left: 63%;
+    width: 40%;
   }
 }
 .c-contents.-f-slider, .c-contents.-f-view {
@@ -3947,6 +3984,21 @@ button.swiper-pagination-bullet {
     transform: translate(-50%, -50%);
     width: 60%;
     z-index: 1;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-soldOut_s {
+  z-index: 99;
+  filter: drop-shadow(1px 1px 2px rgb(128, 128, 128));
+}
+.c-contents.-imgBg .c-contentsBox.-soldOut_s img {
+  background: #5a8190;
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-soldOut_s {
+    top: 50%;
+    left: 50%;
+    transform: rotate(-5deg) translate(-50%, -50%);
+    width: 75%;
   }
 }
 

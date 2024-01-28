@@ -99,6 +99,11 @@
 				a{
 					display: block;
 				}
+
+				// SOLD OUT時に使用する
+				&.-grayOutItem{
+					pointer-events: none;
+				}
 			}
 		}
 	}

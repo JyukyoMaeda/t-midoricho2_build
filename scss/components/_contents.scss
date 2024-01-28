@@ -40,6 +40,22 @@
 					}
 				}
 			}
+
+			// SOLD OUT
+			&.-soldOut{
+				top: 36%;
+				left: 45%;
+				transform: rotate(-5deg) translate(-50%, -50%);
+				width: 70%;
+				z-index: 99;
+				filter: drop-shadow(1px 1px 2px rgb(128, 128, 128));
+				img{background: $sold-out;}
+				@include min(768){
+					top: 41%;
+					left: 63%;
+					width: 40%;
+				}
+			}
 		}
 	}
 
@@ -365,6 +381,18 @@
 					transform: translate(-50%, -50%);
 					width: 60%;
 					z-index: 1;
+				}
+			}
+			// SOLD OUT
+			&.-soldOut_s{
+				z-index: 99;
+				filter: drop-shadow(1px 1px 2px rgb(128, 128, 128));
+				img{background: $site-color02;}
+				@include max(768){
+					top: 50%;
+					left: 50%;
+					transform: rotate(-5deg) translate(-50%, -50%);
+					width: 75%;
 				}
 			}
 		}
